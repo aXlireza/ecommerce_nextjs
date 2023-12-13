@@ -16,7 +16,7 @@ const Megamenu: React.FC<Props> = ({ items }) => {
 
 	return (
 		<section className='h-fit' onMouseEnter={() => toggleDropdown(true)} onMouseLeave={() => toggleDropdown(false)}>
-			<div className='flex flex-row items-center gap-3 p-2.5 text-black dark:text-white'>
+			<div className='flex flex-row items-center gap-3 p-2.5 text-black'>
 				<FiMenu />
 				<span className='flex'>قیمت روز</span>
 			</div>

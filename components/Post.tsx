@@ -10,7 +10,7 @@ interface Props {
 
 const Post: React.FC<Props> = ({ post: { title, link, imgUrl, alt, btnText }, rowOrCol='flex-col' }) => {
 	return (
-		<Link href={link} className="flex flex-col w-fit gap-2 m-auto">
+		<Link href={link} className="flex flex-col gap-2 m-auto">
       <Image
         className='rounded-lg'
         src={imgUrl}
@@ -23,8 +23,8 @@ const Post: React.FC<Props> = ({ post: { title, link, imgUrl, alt, btnText }, ro
         height={200}
       />
       <div className={`flex ${rowOrCol} gap-3`}>
-        <h4 className='text-black dark:text-white text-xl'>{title}</h4>
-        <button className='text-orange-400 bg-white dark:bg-black border-2 border-orange-400 px-5 rounded-lg w-fit'>{btnText}</button>
+        <h4 className='text-black text-xl'>{title}</h4>
+        <button className='text-orange-400 bg-white border-2 border-orange-samen px-5 rounded-lg w-fit'>{btnText}</button>
       </div>
 		</Link>
 	)

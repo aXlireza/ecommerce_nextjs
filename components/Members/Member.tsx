@@ -7,7 +7,7 @@ import Image from 'next/image'
 
 const Member: React.FC<Member> = ({ imgUrl, alt, name, role, tel }) => {
 	return (
-		<article className="flex flex-row w-fit gap-3 border-slate-200 dark:border-slate-700 border-2 rounded-2xl p-3">
+		<article className="flex flex-row w-fit gap-3 border-slate-samen border-2 rounded-2xl p-3">
 			<Image
         className='rounded-lg border-2 dark:border-slate-600'
         src={imgUrl}
@@ -16,9 +16,9 @@ const Member: React.FC<Member> = ({ imgUrl, alt, name, role, tel }) => {
         height={140}
       />
 			<div className='flex flex-col gap-1'>
-        <h5 className='text-black dark:text-white text-xl'>{name}</h5>
-        <h6 className='text-black dark:text-white text-lg'>{role}</h6>
-        <Link className='flex flex-row text-black dark:text-white border-2 border-orange-300 rounded-lg px-2 py-1 items-center' href={`tel:+98${convertToEng(tel.slice(1).replaceAll(' ', '').replaceAll('-', ''))}`}>
+        <h5 className='text-black text-xl'>{name}</h5>
+        <h6 className='text-black text-lg'>{role}</h6>
+        <Link className='flex flex-row text-black border-2 border-orange-300 rounded-lg px-2 py-1 items-center' href={`tel:+98${convertToEng(tel.slice(1).replaceAll(' ', '').replaceAll('-', ''))}`}>
           <span className='text-orange-300'>{tel}</span>
           <FiPhone className='stroke-none fill-black dark:fill-white' />
         </Link>

@@ -8,7 +8,7 @@ interface Props {
 
 const HeaderItems: React.FC<Props> = ({ text, link }) => {
 	return (
-		<Link href={link} className="flex flex-row p-2.5 text-black dark:text-white items-center gap-2 transition-colors hover:text-blue-500">
+		<Link href={link} className="flex flex-row p-2.5 text-black items-center gap-2 transition-colors hover:text-blue-500">
       <span>{text}</span>
 		</Link>
 	)

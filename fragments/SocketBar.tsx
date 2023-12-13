@@ -16,7 +16,7 @@ interface SocialMedia {
 
 const SocketBar: React.FC<Props> = ({ medias }) => {
   return (
-    <section className="bg-white dark:bg-black px-10 md:px-24">
+    <section className="bg-white px-10 md:px-24">
       <hr className='dark:border-slate-800 border-slate-200 border-1 rounded-lg' />
       <div className='flex flex-row py-5 gap-4' dir='ltr'>
         {medias.map((media, key) => (

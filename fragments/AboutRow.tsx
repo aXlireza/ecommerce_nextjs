@@ -12,11 +12,11 @@ const AboutRow: React.FC<Props> = ({ description, videoUrl, poster }) => {
   const [showControls, setShowControls] = useState(false);
 
 	return (
-    <section className='flex bg-orange-300 dark:bg-orange-800 px-10 lg:px-24 py-5'>
+    <section className='flex bg-yellow-samen px-10 lg:px-24 py-5'>
       <section className='flex flex-row flex-wrap py-8 gap-6 overflow-x-hidden w-fit'>
         <Heading color='border-white' text='درباره ثامن تجارت' underline='partial' onClick={()=>null} textClasses={'text-xl'} customClasses='' />
         <div className='flex flex-col-reverse md:flex-row md:items-start items-center gap-5' dir='ltr'>
-          <p className='text-black dark:text-white' dir='rtl'>{description}</p>
+          <p className='text-black' dir='rtl'>{description}</p>
           <video poster={poster} width="500" controls={showControls} onClick={() => setShowControls(true)}>
             <source src={videoUrl} type="video/mp4" />
           </video>
