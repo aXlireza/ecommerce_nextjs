@@ -34,7 +34,7 @@ export async function getStaticPaths() {
   return ({
     fallback: false,
     paths: [
-      {params: {slug: 'ajdar-milgerd'}}
+      {params: {pricelist_slug: 'ajdar-milgerd'}}
     ]
   })
 }
