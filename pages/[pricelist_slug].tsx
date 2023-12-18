@@ -1,5 +1,7 @@
 "use client"
 
+import AdsBanner from "@/components/AdsBanner"
+import AdsBanners from "@/fragments/AdsBanners"
 import Breadcrumb from "@/fragments/Breadcrumb"
 
 interface Props {
@@ -23,6 +25,17 @@ const Pricelist: React.FC<Props> = ({ currentPage, parentPage }) => {
         },
         parentPage,
         currentPage
+      ]} />
+      <AdsBanners items={[
+        {
+          imgUrl: 'https://cloud.samentejarat.com/s1.webp',
+          alt: 'alt',
+          link: '#'
+        },{
+          imgUrl: 'https://cloud.samentejarat.com/s1.webp',
+          alt: 'alt',
+          link: '#'
+        },
       ]} />
     </main>
   )
