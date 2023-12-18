@@ -1,4 +1,4 @@
-export interface AdsBanner {
+export interface Banner {
   title: string,
   description: string,
   imgUrl: string,

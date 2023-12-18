@@ -3,7 +3,7 @@
 import Hero from '@/fragments/Hero'
 import TabbedCarousel from '@/fragments/TabbedCarousel'
 import Brands from '@/fragments/Brands'
-import AdsBanners from '@/fragments/AdsBanners'
+import Banners from '@/fragments/Banners'
 import AboutRow from '@/fragments/AboutRow'
 import TeamMembers from '@/fragments/TeamMembers'
 import Carousel from '@/fragments/Carousel'
@@ -183,7 +183,7 @@ export default function Home() {
         }
       ]} />
 
-      <AdsBanners banners={[
+      <Banners banners={[
         {
           title: 'انواع فولاد های آلیاژ',
           description: 'تضمین صد در صدی قیمت و کیفیت',

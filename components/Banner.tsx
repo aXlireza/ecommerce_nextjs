@@ -1,9 +1,9 @@
-import { AdsBanner } from '@/types/AdsBanner'
+import { Banner as Banner_d } from '@/types/Banner'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-const AdsBanner: React.FC<AdsBanner> = ({ title, link, description, imgUrl, alt }) => {
+const Banner: React.FC<Banner_d> = ({ title, link, description, imgUrl, alt }) => {
 	return (
 		<Link href={link} className='flex flex-row rounded-2xl overflow-hidden border-slate-samen border-2'>
       <div className='flex flex-col p-5 py-10'>
@@ -24,4 +24,4 @@ const AdsBanner: React.FC<AdsBanner> = ({ title, link, description, imgUrl, alt 
 	)
 }
 
-export default AdsBanner
+export default Banner
