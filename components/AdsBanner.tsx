@@ -12,6 +12,7 @@ const AdsBanner: React.FC<AdsBanner> = ({ imgUrl, alt, link }) => {
     }}
     width={400}
     height={200}
+    className="rounded-2xl overflow-hidden"
   /></Link>
 }
 
