@@ -2,11 +2,11 @@ import React from 'react'
 
 interface Props {
 	text: string,
-  underline: 'full' | 'partial' | null,
-  onClick: () => void,
-  color: 'border-yellow-600' | string | null,
-  customClasses: string,
-  textClasses: string | null,
+  underline?: 'full' | 'partial',
+  onClick?: () => void,
+  color?: 'border-yellow-600' | string,
+  customClasses?: string,
+  textClasses?: string,
 }
 
 const Heading: React.FC<Props> = ({ text, underline, onClick, color='border-yellow-600', customClasses='', textClasses='' }) => {

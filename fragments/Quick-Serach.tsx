@@ -7,7 +7,7 @@ interface Props {}
 const QuickSearch: React.FC<Props> = ({ }) => {
 	return (
     <section className='divide-y border-slate-samen border-2 rounded-xl'>
-      <Heading text="جستجوی سریع قیمت" underline={'partial'} textClasses='' customClasses='' onClick={()=>null} color='border-yellow-600' />
+      <Heading text="جستجوی سریع قیمت" underline={'partial'} color='border-yellow-600' />
       <form className='w-full flex flex-col gap-4 p-6 items-center'>
 
         {/* Product select options */}
