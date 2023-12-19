@@ -3,8 +3,7 @@
 import AdsBanners from "@/fragments/AdsBanners"
 import Breadcrumb from "@/fragments/Breadcrumb"
 import Cta from "@/fragments/Cta"
-import PriceTable from "@/fragments/Table/PriceTable"
-import PriceTables from "@/fragments/Table/PriceTables"
+import PriceTables from "@/fragments/PriceTables"
 import VerticalQuickSearch from "@/fragments/Vertical-QuickSearch"
 import { Factory } from "@/types/Factory"
 

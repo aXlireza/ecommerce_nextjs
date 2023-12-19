@@ -1,5 +1,5 @@
+import PriceTable from '@/components/Table/PriceTable'
 import { Factory } from '@/types/Factory'
-import PriceTable from './PriceTable'
 
 interface Props {
   factories: Factory[]

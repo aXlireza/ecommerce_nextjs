@@ -12,6 +12,7 @@ const PriceTable: React.FC<Props> = ({ nav }) => {
 	return (
     <section className='flex'>
         <TableNav {...nav} rateFunc={() => setRateActive(prevState => !prevState)} rateActive={rateActive}  />
+        
     </section>
 	)
 }
