@@ -8,6 +8,7 @@ import Megamenu from '@/fragments/Megamenu';
 
 import { FiMenu } from 'react-icons/fi';
 import MegamenuMobile from './Megamenu-mobile';
+import Link from 'next/link';
 
 interface HeaderProps {
   logo_alt: string,
@@ -201,12 +202,14 @@ const Header: React.FC<HeaderProps> = ({ logo_alt }) => {
       <div className='flex flex-row gap-5 items-center'>
 
         {/* logo */}
-        <Image
-          src={'https://cloud.samentejarat.com/samen2 (1).webp'}
-          alt={logo_alt}
-          width={160}
-          height={20}
-        />
+        <Link href={'/'}>
+          <Image
+            src={'https://cloud.samentejarat.com/samen2 (1).webp'}
+            alt={logo_alt}
+            width={160}
+            height={20}
+          />
+        </Link>
 
         {/* large screens menu items */}
         <div className={`hidden lg:!flex flex-row items-center`}>
