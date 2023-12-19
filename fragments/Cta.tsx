@@ -7,7 +7,7 @@ interface Props {
 }
 
 const Cta: React.FC<Props> = ({ tel }) => {
-  return (<section className="flex flex-row items-center bg-white border-2 border-slate-100 p-3 justify-center gap-2 rounded-xl">
+  return (<section className="flex flex-row items-center bg-white border-2 border-slate-200 p-3 justify-center gap-2 rounded-xl">
     <FiPhone className="-scale-x-[1] scale-y-[1] fill-red-500 stroke-red-800 text-2xl" />
     <p className="text-lg">دریافت قیمت لحظه ای و مشاوره خرید:</p>
     <Link
