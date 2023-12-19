@@ -3,6 +3,7 @@
 import AdsBanners from "@/fragments/AdsBanners"
 import Breadcrumb from "@/fragments/Breadcrumb"
 import Cta from "@/fragments/Cta"
+import VerticalQuickSearch from "@/fragments/Vertical-QuickSearch"
 
 interface Props {
   currentPage: PageBasicInfo,
@@ -47,8 +48,9 @@ const Pricelist: React.FC<Props> = ({ currentPage, parentPage }) => {
       ]} />
       <section>
         {/* main bar */}
-        <section>
+        <section className="flex flex-col gap-3">
           <Cta tel="۰۲۱۹۱۰۰۳۱۸۱" />
+          <VerticalQuickSearch title={currentPage.title} />
         </section>
         {/* sidebar */}
         <section></section>
