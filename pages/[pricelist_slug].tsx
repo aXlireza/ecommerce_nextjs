@@ -18,13 +18,21 @@ interface PageBasicInfo {
 const Pricelist: React.FC<Props> = ({ currentPage, parentPage }) => {
   return (
     <main className='flex flex-col bg-slate-100'>
+      {/* Process the items to include the keyword "قیمت"
+      since the original format of the titles must be kept and used */}
       <Breadcrumb items={[
         {
           title: 'خانه',
           link: '#',
         },
-        parentPage,
-        currentPage
+        {
+          ...parentPage,
+          title: 'قیمت ' + parentPage.title
+        },
+        {
+          ...currentPage,
+          title: 'قیمت ' + currentPage.title
+        }
       ]} />
       <AdsBanners items={[
         {
@@ -64,14 +72,15 @@ export async function getStaticProps({params}: any) {
 
   const props: Props = {
     currentPage: {
-      title: 'لیست قیمت میلگرد آجدار',
+      title: 'میلگرد آجدار',
       slug: 'ajdar',
       link: '/milgerd/ajdar'
     },
     parentPage: {
-      title: 'لیست قیمت میلگرد',
+      title: 'میلگرد',
       slug: 'milgerd',
-      link: '/milgerd'    }
+      link: '/milgerd'
+    }
   }
 
   return {
