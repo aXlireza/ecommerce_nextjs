@@ -7,8 +7,12 @@ interface Props {
 
 const PriceTables: React.FC<Props> = ({ factories }) => {
 
-	return (<section>
-    {factories.map((factory, key) => <PriceTable key={key} nav={{...factory}} />)}
+	return (<section className='flex flex-col gap-5'>
+    {factories.map((factory, key) => <PriceTable
+      key={key}
+      nav={{...factory.info}}
+      products={factory.products}
+    />)}
   </section>)
 }
 

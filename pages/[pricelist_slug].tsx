@@ -90,12 +90,46 @@ export async function getStaticProps({params}: any) {
     },
     factories: [
       {
-        title: 'میلگرد آجدار نیشابور',
-        date: 'امروز ۱۱:۱۵'
+        info: {
+          title: 'میلگرد آجدار نیشابور',
+          date: 'امروز ۱۱:۱۵'
+        },
+        products: [
+          {
+            title: 'نیشابور',
+            factoryName: 'نیشابور',
+            size: 'نیشابور',
+            standard: 'نیشابور',
+            price: 'نیشابور',
+          },{
+            title: 'نیشابور',
+            factoryName: 'نیشابور',
+            size: 'نیشابور',
+            standard: 'نیشابور',
+            price: 'نیشابور',
+          },{
+            title: 'نیشابور',
+            factoryName: 'نیشابور',
+            size: 'نیشابور',
+            standard: 'نیشابور',
+            price: 'نیشابور',
+          },
+        ]
       },{
-        title: 'میلگرد آجدار نیشابور',
-        date: 'امروز ۱۱:۱۵'
-      },
+        info: {
+          title: 'میلگرد آجدار نیشابور',
+          date: 'امروز ۱۱:۱۵'
+        },
+        products: [
+          {
+            title: 'نیشابور',
+            factoryName: 'نیشابور',
+            size: 'نیشابور',
+            standard: 'نیشابور',
+            price: 'نیشابور',
+          }
+        ]
+      }
     ]
   }
 

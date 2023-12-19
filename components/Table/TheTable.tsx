@@ -1,14 +1,30 @@
-import { Factory } from '@/types/Factory'
-import PriceTable from './PriceTable'
+import { Product } from "@/types/Factory"
 
 interface Props {
+  products: Product[]
 }
 
-const TheTable: React.FC<Props> = ({  }) => {
+const colStyle = "font-medium text-center"
 
-	return (<section>
-    {/* {factories.map((factory, key) => <PriceTable key={key} nav={{...factory}} />)} */}
-  </section>)
+const TheTable: React.FC<Props> = ({ products }) => {
+	return (<table className="table-auto rounded-lg overflow-hidden">
+    {/* table head */}
+      <tr className="bg-yellow-200 h-10">
+        <th className={colStyle}>کالا</th>
+        <th className={colStyle}>کارخانه</th>
+        <th className={colStyle}>سایز</th>
+        <th className={colStyle}>استاندارد</th>
+        <th className={colStyle}>قیمت</th>
+      </tr>
+    {/* table body */}
+    {products.map((product, key) => <tr className={`odd:bg-slate-100 even:bg-white py-2 h-10`} key={key}>
+      <td className={colStyle}>{product.title}</td>
+      <td className={colStyle}>{product.factoryName}</td>
+      <td className={colStyle}>{product.size}</td>
+      <td className={colStyle}>{product.standard}</td>
+      <td className={colStyle}>{product.price}</td>
+    </tr>)}
+  </table>)
 }
 
 export default TheTable
