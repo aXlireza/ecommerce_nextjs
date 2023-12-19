@@ -1,8 +1,8 @@
 "use client"
 
-import AdsBanner from "@/components/AdsBanner"
 import AdsBanners from "@/fragments/AdsBanners"
 import Breadcrumb from "@/fragments/Breadcrumb"
+import Cta from "@/fragments/Cta"
 
 interface Props {
   currentPage: PageBasicInfo,
@@ -37,6 +37,14 @@ const Pricelist: React.FC<Props> = ({ currentPage, parentPage }) => {
           link: '#'
         },
       ]} />
+      <section>
+        {/* main bar */}
+        <section>
+          <Cta tel="۰۲۱۹۱۰۰۳۱۸۱" />
+        </section>
+        {/* sidebar */}
+        <section></section>
+      </section>
     </main>
   )
 }
