@@ -25,7 +25,7 @@ const TableNav: React.FC<Nav> = ({ rateActive=false, title, date, rateFunc }) =>
 			</div>
 
 			{/* left part */}
-			<div className='flex flex-row items-center gap-2 pl-5' onClick={rateFunc}>
+			<div className='flex flex-row items-center gap-2 pl-5 cursor-pointer' onClick={rateFunc}>
 				<FiCheck className={`${rateActive ? 'bg-green-500 stroke-white' : 'border-slate-500 border-2' } transition-all rounded-md`} />
 				<span className='text-slate-700 text-sm sm:text-lg'>نمایش با ارزش افزوده</span>
 			</div>
