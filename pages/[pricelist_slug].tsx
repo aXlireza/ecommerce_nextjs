@@ -50,7 +50,7 @@ const Pricelist: React.FC<Props> = ({ currentPage, parentPage }) => {
         {/* main bar */}
         <section className="flex flex-col gap-3">
           <Cta tel="۰۲۱۹۱۰۰۳۱۸۱" />
-          <VerticalQuickSearch title={currentPage.title} />
+          <VerticalQuickSearch title={currentPage.title} rounded="full" />
         </section>
         {/* sidebar */}
         <section></section>
