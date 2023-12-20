@@ -8,7 +8,7 @@ import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-interface Props {
+type Props = {
   active:boolean,
   items: Box[]
 }

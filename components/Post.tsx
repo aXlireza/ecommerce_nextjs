@@ -3,7 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import { Post } from '@/types/Post'
 
-interface Props {
+type Props = {
   post: Post,
   rowOrCol: string
 }

@@ -10,7 +10,7 @@ import { FiMenu } from 'react-icons/fi';
 import MegamenuMobile from './Megamenu-mobile';
 import Link from 'next/link';
 
-interface Props {
+type Props = {
   logo_alt: string,
 }
 

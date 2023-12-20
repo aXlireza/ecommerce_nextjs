@@ -3,7 +3,7 @@ import { MegamenuItem } from '@/types/megamenu';
 import React, { useState } from 'react'
 import { FiMenu } from 'react-icons/fi';
 
-interface Props {
+type Props = {
 	items: MegamenuItem[]
 }
 

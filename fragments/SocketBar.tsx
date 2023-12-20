@@ -4,11 +4,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-interface Props {
+type Props = {
   medias: SocialMedia[]
 }
 
-interface SocialMedia {
+type SocialMedia = {
   name: string,
   alt: string,
   link: string

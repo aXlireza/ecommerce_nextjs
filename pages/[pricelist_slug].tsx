@@ -7,13 +7,13 @@ import PriceTables from "@/fragments/PriceTables"
 import VerticalQuickSearch from "@/fragments/Filter/Vertical-QuickSearch"
 import { Factory } from "@/types/Table"
 
-interface Props {
+type Props = {
   currentPage: PageBasicInfo,
   parentPage: PageBasicInfo,
   factories: Factory[]
 }
 
-interface PageBasicInfo {
+type PageBasicInfo = {
   title: string,
   slug: string,
   link: string,

@@ -8,11 +8,11 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import Link from 'next/link';
 
-interface Props {
+type Props = {
   slides: Slide[]
 }
 
-interface Slide {
+type Slide = {
   imgUrl: string,
   alt: string,
   link: string,

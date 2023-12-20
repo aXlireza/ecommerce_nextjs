@@ -4,7 +4,7 @@ import Members from '@/components/Members'
 import { Team } from '@/types/Members'
 import React, { useState } from 'react'
 
-interface Props {
+type Props = {
 	teams: Team[],
 }
 

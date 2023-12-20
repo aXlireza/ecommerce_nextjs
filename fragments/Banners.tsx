@@ -2,7 +2,7 @@ import Banner from '@/components/Banner'
 import { Banner as Banner_d } from '@/types/Banner'
 import React from 'react'
 
-interface Props {
+type Props = {
 	banners: Banner_d[],
 }
 

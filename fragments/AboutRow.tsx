@@ -1,7 +1,7 @@
 import Heading from '@/components/Heading'
 import React, { useState } from 'react'
 
-interface Props {
+type Props = {
   description: string,
   videoUrl: string,
   poster: string

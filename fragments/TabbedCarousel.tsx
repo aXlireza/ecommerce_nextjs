@@ -3,7 +3,7 @@ import TabHead from '@/components/Carousel/TabHead';
 import { Item } from '@/types/TabbedCarousel';
 import TabBody from '@/components/Carousel/TabBody';
 
-interface Props {
+type Props = {
 	data: Item[]
 }
 

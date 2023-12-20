@@ -4,7 +4,7 @@ import { FactoryInfo, Product } from '@/types/Table'
 import TheTable from './TheTable'
 import Toolsbar from './Toolsbar'
 
-interface Props {
+type Props = {
     nav: FactoryInfo,
     products: Product[]
 }

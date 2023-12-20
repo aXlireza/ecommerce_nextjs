@@ -1,7 +1,7 @@
 import { convertToEng } from "@/lib/number"
 import { Product } from "@/types/Table"
 
-interface Props {
+type Props = {
   products: Product[],
   rateState: boolean,
   rateValue: string

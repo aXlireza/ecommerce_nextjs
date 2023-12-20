@@ -2,7 +2,7 @@ import Brand from '@/components/Brand'
 import { Brand as Brand_d } from '@/types/Brands'
 import React from 'react'
 
-interface Props {
+type Props = {
 	brands: Brand_d[],
 }
 

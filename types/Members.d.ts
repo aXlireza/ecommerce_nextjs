@@ -1,9 +1,9 @@
-export interface Team {
+export type Team {
   title: string,
   members: Member[]
 }
 
-export interface Member {
+export type Member {
   imgUrl: string,
   alt: string,
   name: string,

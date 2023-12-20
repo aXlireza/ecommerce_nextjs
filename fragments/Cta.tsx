@@ -2,7 +2,7 @@ import { convertToEng } from "@/lib/number"
 import Link from "next/link"
 import { FiPhone } from "react-icons/fi"
 
-interface Props {
+type Props = {
   tel: string,
 }
 

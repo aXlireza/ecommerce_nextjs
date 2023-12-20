@@ -1,20 +1,20 @@
-export interface Nav extends FactoryInfo {
+export type Nav = FactoryInfo & {
 	rateActive: boolean,
   rateFunc: () => void
 }
 
-export interface Factory {
+export type Factory = {
   info: FactoryInfo,
   products: Product[]
 }
 
-export interface FactoryInfo {
+export type FactoryInfo = {
   title: string,
   date: string,
   upToDate: boolean,
   rateValue: string
 }
-export interface Product {
+export type Product = {
   title: string,
   factoryName: string,
   size: string,

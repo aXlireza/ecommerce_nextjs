@@ -1,8 +1,8 @@
-export interface Breadcrumb {
+export type Breadcrumb {
 	items: Item[],
 }
 
-interface Item {
+type Item {
   title: string,
   link: string
 }

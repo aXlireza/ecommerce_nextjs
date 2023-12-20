@@ -2,7 +2,7 @@ import React from 'react'
 import { Member as Member_d } from '@/types/Members'
 import Member from './Member'
 
-interface Props {
+type Props = {
   active: boolean,
   members: Member_d[]
 }

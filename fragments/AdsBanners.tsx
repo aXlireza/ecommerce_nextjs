@@ -1,7 +1,7 @@
 import AdsBanner from "@/components/AdsBanner";
 import { AdsBanner as AdsBanner_d } from "@/types/AdsBanner";
 
-interface Props {
+type Props = {
   items: AdsBanner_d[]
 }
 export default function AdsBanners({ items }: Props) {

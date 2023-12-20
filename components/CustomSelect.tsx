@@ -1,11 +1,11 @@
 import React from 'react'
 
-interface Props {
+type Props = {
   options: Select[],
   rounded?: 'full' | string
 }
 
-interface Select {
+type Select = {
 	text: string,
   value: string
 }

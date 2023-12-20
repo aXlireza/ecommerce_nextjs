@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface Props {
+type Props = {
   lastupdate: string,
   prices: string[],
   date1: string,

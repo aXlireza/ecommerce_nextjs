@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image'
 
-interface Props {
+type Props = {
   title: string,
   imgUrl: string,
   alt: string,

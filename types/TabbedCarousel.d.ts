@@ -1,15 +1,15 @@
-export interface Item {
+export type Item {
   head: Head,
   body: Box[],
 }
 
-export interface Head {
+export type Head {
 	title: string,
 	imgUrl: string,
 	alt: string,
 }
 
-export interface Box {
+export type Box {
   title: string,
   imgUrl: string,
   alt: string,

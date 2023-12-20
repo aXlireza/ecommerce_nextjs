@@ -1,6 +1,6 @@
 import Heading from "@/components/Heading"
 
-interface Props {
+type Props = {
 
 }
 export default function Usage({  }: Props) {

@@ -2,7 +2,7 @@ import CustomSelect from '@/components/CustomSelect'
 import Heading from '@/components/Heading'
 import React from 'react'
 
-interface Props {
+type Props = {
   title: string,
 }
 

@@ -3,7 +3,7 @@ import React from 'react'
 import { FiPhone } from 'react-icons/fi' // phone icon
 import { convertToEng } from '@/lib/number'
 
-interface Props {
+type Props = {
 	number: string,
 }
 

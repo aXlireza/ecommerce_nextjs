@@ -3,7 +3,7 @@ import React from 'react'
 import Link from 'next/link'
 import { convertToEng } from '@/lib/number'
 
-interface Props {
+type Props = {
 	logo_alt: string,
   tel: string,
   email: string,
@@ -12,12 +12,12 @@ interface Props {
   lists: List[]
 }
 
-interface List {
+type List = {
   head: Item,
   items: Item[]
 }
 
-interface Item {
+type Item = {
   title: string,
   link: string,
 }

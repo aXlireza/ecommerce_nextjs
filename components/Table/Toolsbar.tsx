@@ -1,6 +1,6 @@
 import {  FiDownloadCloud, FiPrinter } from 'react-icons/fi'
 
-interface Props {
+type Props = {
   bgcolor: 'white' | 'samen-gray'
 }
 
