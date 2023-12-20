@@ -226,7 +226,7 @@ const Header: React.FC<HeaderProps> = ({ logo_alt }) => {
             <MegamenuMobile items={memegamenuItems} />
             {headerItems.map(({text, link}, key) => <HeaderItems key={key} text={text} link={link}/>)}
           </div>
-          <div className='w-5/12 h-screen samen-darkbg/80' onClick={updateMenuState}></div>
+          <div className='w-5/12 h-screen samen-darkbg opacity-70' onClick={updateMenuState}></div>
         </div>
       </div>
 

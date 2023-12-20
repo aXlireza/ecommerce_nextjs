@@ -10,7 +10,7 @@ const TheTable: React.FC<Props> = ({ products }) => {
 	return (<table className="table-auto rounded-lg overflow-hidden">
     {/* table head */}
     <thead>
-      <tr className="bg-yellow-200 h-10">
+      <tr className="bg-samen-orange h-10">
         <th className={colStyle}>کالا</th>
         <th className={colStyle}>کارخانه</th>
         <th className={colStyle}>سایز</th>
