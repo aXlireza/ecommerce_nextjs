@@ -12,11 +12,11 @@ const Toolsbar: React.FC<Props> = ({ bgcolor }) => {
         {/* triangle */}
         <span className={`w-0 h-0 
           border-b-[40px] border-b-transparent
-          border-l-[24px] border-l-${bgcolor}
+          border-l-[24px] ${bgcolor == 'white' ? 'border-l-white' : 'border-l-samen-gray'} 
           border-t-[0px] border-t-transparent`}>
         </span>
         {/* TODO: Setup the print and download functionalities */}
-        <div className={`bg-${bgcolor} flex flex-row gap-4 items-center pl-5 pr-3 samen-border !border-t-0 !border-r-0 !rounded-t-none !rounded-br-none`}>
+        <div className={`${bgcolor == 'white' ? 'bg-white' : 'bg-samen-gray'} flex flex-row gap-4 items-center pl-5 pr-3 samen-border !border-t-0 !border-r-0 !rounded-t-none !rounded-br-none`}>
           <FiPrinter className='text-2xl stroke-2 cursor-pointer' />
           <FiDownloadCloud className='text-2xl stroke-2 cursor-pointer' />
         </div>
