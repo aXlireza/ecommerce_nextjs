@@ -7,19 +7,19 @@ const TableNav: React.FC<Nav> = ({ rateActive=false, title, date, rateFunc }) =>
     <section className="relative w-full flex items-center bg-white justify-between overflow-hidden samen-border">
 			{/* right part */}
 			<div className='flex flex-row items-center'>
-				<div className="z-10 bg-samen w-fit h-[50px] flex items-center justify-center pr-5">
+				<div className="z-10 bg-samen-orange w-fit h-[50px] flex items-center justify-center pr-5">
 					<p className="text-center font-semibold text-slate-700 text-sm sm:text-base">{title}</p>
 				</div>
 				{/* triangle */}
 				<span className="w-0 h-0 
 					border-t-[50px] border-t-transparent
-					border-r-[40px] border-r-samen
+					border-r-[40px] border-r-samen-orange
 					border-b-[0px] border-b-transparent">
 				</span>
 
 				{/* date */}
 				<article className='flex flex-row items-center gap-1 -mr-2'>
-					<FiClock className="stroke-samen" />
+					<FiClock className="stroke-samen-orange" />
 					<span className='text-slate-700 text-sm sm:text-base'>{date}</span>
 				</article>
 			</div>

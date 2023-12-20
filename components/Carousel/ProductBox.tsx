@@ -21,7 +21,7 @@ const ProductBox: React.FC<Props> = ({ title, imgUrl, date, alt, link }) => {
 
     <div className='flex flex-row py-3'>
       <h5 className='px-5 text-base text-black'>{title}</h5>
-      <span className='px-5 text-samen font-semibold text-md border-samen border-2 rounded-lg'>{date}</span>
+      <span className='px-5 text-samen-orange font-semibold text-md border-samen-orange border-2 rounded-lg'>{date}</span>
     </div>
   </Link>)
 }

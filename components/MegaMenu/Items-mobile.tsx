@@ -12,7 +12,7 @@ const MenuItemMobile: React.FC<MegamenuItem> = ({ icon, text, link, subcategorie
   function item(text:string, link:string, subitems:MegamenuSubItem[], arrow=true, key=0) {
     return (
       <div key={key}>
-        <Link href={link} className='text-black dark:text-white hover:text-red-700 p-1 flex flex-row items-center w-full justify-between'>
+        <Link href={link} className='text-black hover:text-red-700 p-1 flex flex-row items-center w-full justify-between'>
 
           {/* title */}
           <div className='flex flex-row items-center gap-2'>
@@ -33,9 +33,9 @@ const MenuItemMobile: React.FC<MegamenuItem> = ({ icon, text, link, subcategorie
   }
 
   return (
-    <div className='flex flex-col dark:bg-black' onClick={() => toggleDropdown(!isOpen)}>
+    <div className='flex flex-col' onClick={() => toggleDropdown(!isOpen)}>
 
-        <Link href={link} className={`hover:text-red-700 ${isOpen ? 'dark:bg-slate-700 bg-slate-200 text-red-700' : 'text-black dark:text-white dark:bg-slate-800'} transition flex flex-row items-center w-full p-3 justify-between cursor-pointer`}>
+        <Link href={link} className={`hover:text-red-700 ${isOpen ? 'bg-slate-200 text-red-700' : 'text-black'} transition flex flex-row items-center w-full p-3 justify-between cursor-pointer`}>
 
           {/* title and the associated icon */}
           <div className='flex flex-row items-center gap-1'>
@@ -50,7 +50,7 @@ const MenuItemMobile: React.FC<MegamenuItem> = ({ icon, text, link, subcategorie
         </Link>
 
         {/* the secondary flyout menu that appear as a primary column item is hovered */}
-        <div className={`bg-slate-100 dark:bg-slate-900 overflow-hidden flex flex-col ${isOpen ? 'w-full py-2 px-4' : 'max-h-0 max-w-0'}`}>
+        <div className={`bg-slate-100 overflow-hidden flex flex-col ${isOpen ? 'w-full py-2 px-4' : 'max-h-0 max-w-0'}`}>
 
           {/* the megamenu content */}
           <div className='flex flex-col'>

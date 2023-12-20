@@ -23,7 +23,7 @@ const TabBody: React.FC<Props> = ({ active, items }) => {
     pagination={{
       clickable: true,
       bulletClass: 'swiper-pagination-bullet !bg-gray-300 p-2',
-      bulletActiveClass: 'swiper-pagination-bullet-active !bg-samen'
+      bulletActiveClass: 'swiper-pagination-bullet-active !bg-samen-orange'
     }}
     breakpoints={{
       320: {

@@ -222,7 +222,7 @@ const Header: React.FC<HeaderProps> = ({ logo_alt }) => {
       {/* small screens menu items */}
       <div className='fixed top-0 right-0 w-full'>
         <div className={`flex flex-row w-full lg:max-w-0 absolute top-0 right-0 z-50 overflow-hidden transition-all ${menuCollapsed ? 'max-w-0' : 'max-w-full'}`}>
-          <div dir="rtl" className='relative z-50 overflow-y-auto h-screen w-7/12 bg-white dark:bg-slate-800 flex flex-col'>
+          <div dir="rtl" className='relative z-50 overflow-y-auto h-screen w-7/12 bg-white flex flex-col'>
             <MegamenuMobile items={memegamenuItems} />
             {headerItems.map(({text, link}, key) => <HeaderItems key={key} text={text} link={link}/>)}
           </div>

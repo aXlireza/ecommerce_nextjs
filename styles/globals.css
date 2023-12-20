@@ -86,11 +86,10 @@ body {
     font-family: PeydaWebFaNum !important;
 }
 
-/* .samen-border { @apply border-2 rounded-xl sahdow-samen} */
 @layer components {
 	.samen-border {
 		@apply border-2 rounded-xl shadow-samen
 	}
 }
 
-.bg-gray-samen{background-color:#ededed}
+/* .bg-gray-samen-orange{background-color:#ededed} */

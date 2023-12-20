@@ -18,7 +18,7 @@ const Carousel: React.FC<Props> = ({ title, rowOrCol, posts }) => {
 
 	return (
       <div className='rounded-lg'>
-        <Heading text={title} color='border-yellow-400 dark:border-yellow-600' underline='partial' textClasses='text-xl' />
+        <Heading text={title} color='border-yellow-400' underline='partial' textClasses='text-xl' />
         <div className='py-5'>
           <Swiper
             slidesPerView={3}
@@ -28,7 +28,7 @@ const Carousel: React.FC<Props> = ({ title, rowOrCol, posts }) => {
             pagination={{
               clickable: true,
               bulletClass: 'swiper-pagination-bullet !bg-gray-300 p-2',
-              bulletActiveClass: 'swiper-pagination-bullet-active !bg-samen'
+              bulletActiveClass: 'swiper-pagination-bullet-active !bg-samen-orange'
             }}
             breakpoints={{
               320: {

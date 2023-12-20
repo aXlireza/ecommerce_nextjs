@@ -12,7 +12,7 @@ const MenuItem: React.FC<MegamenuItem> = ({ icon, text, link, subcategories }) =
   function item(text:string, link:string, subitems:MegamenuSubItem[], arrow=true, key=0) {
     return (
       <div key={key}>
-        <Link href={link} className='hover:text-red-700 p-1 flex flex-row items-center w-48 justify-between text-black dark:text-white'>
+        <Link href={link} className='hover:text-red-700 p-1 flex flex-row items-center w-48 justify-between text-black'>
 
           {/* title */}
           <div className='flex flex-row items-center gap-2'>
@@ -33,9 +33,9 @@ const MenuItem: React.FC<MegamenuItem> = ({ icon, text, link, subcategories }) =
   }
 
   return (
-    <div className='flex flex-row dark:bg-black' onMouseEnter={() => toggleDropdown(true)} onMouseLeave={() => toggleDropdown(false)}>
+    <div className='flex flex-row' onMouseEnter={() => toggleDropdown(true)} onMouseLeave={() => toggleDropdown(false)}>
 
-        <Link href={link} className={`${isOpen ? 'dark:bg-slate-700 bg-slate-300 text-red-700' : 'text-black dark:text-white bg-slate-100 dark:bg-slate-800'} transition flex flex-row items-center w-48 p-3 justify-between cursor-pointer`}>
+        <Link href={link} className={`${isOpen ? 'bg-slate-300 text-red-700' : 'text-black bg-slate-100'} transition flex flex-row items-center w-48 p-3 justify-between cursor-pointer`}>
 
           {/* title and the associated icon */}
           <div className='flex flex-row items-center gap-1'>
@@ -51,10 +51,10 @@ const MenuItem: React.FC<MegamenuItem> = ({ icon, text, link, subcategories }) =
 
         {/* the secondary flyout menu that appear as a primary column item is hovered */}
         <div className='max-w-0 max-h-0'>
-          <div className={`bg-slate-300 dark:bg-slate-700 top-0 overflow-hidden flex flex-col absolute ${isOpen ? 'max-h-screen w-max py-2 px-4' : 'max-h-0 max-w-0'}`}>
+          <div className={`bg-slate-300 top-0 overflow-hidden flex flex-col absolute ${isOpen ? 'max-h-screen w-max py-2 px-4' : 'max-h-0 max-w-0'}`}>
 
             {/* The mengameny btn */}
-            <div className='flex flex-row items-center gap-2 text-black dark:text-white'>
+            <div className='flex flex-row items-center gap-2 text-black'>
               <span className='min-w-fit'>قیمت {text}</span>
               <hr className='w-full'/>
             </div>
