@@ -87,7 +87,7 @@ body {
 }
 
 @layer components {
-	.samen-border { @apply border-2 rounded-xl shadow-samen }
+	.samen-border { @apply border rounded-xl shadow-samen }
 	.samen-text { @apply text-slate-900 }
 	.samen-lightbg { @apply bg-slate-100 }
 	.samen-semilightbg { @apply bg-slate-300 }
