@@ -4,7 +4,7 @@ import { FiCheck, FiClock } from 'react-icons/fi';
 
 const TableNav: React.FC<Nav> = ({ rateActive=false, title, date, rateFunc }) => {
 	return (
-    <section className="relative w-full flex items-center bg-white justify-between rounded-lg overflow-hidden border-slate-samen border-2">
+    <section className="relative w-full flex items-center bg-white justify-between overflow-hidden samen-border">
 			{/* right part */}
 			<div className='flex flex-row items-center'>
 				<div className="z-10 bg-samen w-fit h-[50px] flex items-center justify-center pr-5">

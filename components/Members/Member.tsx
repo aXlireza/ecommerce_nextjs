@@ -7,7 +7,7 @@ import Image from 'next/image'
 
 const Member: React.FC<Member> = ({ imgUrl, alt, name, role, tel }) => {
 	return (
-		<article className="flex flex-row w-fit gap-3 border-slate-samen border-2 rounded-2xl p-3">
+		<article className="flex flex-row w-fit gap-3 samen-border p-3">
 			<Image
         className='rounded-lg border-2 dark:border-slate-600'
         src={imgUrl}

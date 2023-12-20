@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind variants;
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -84,8 +85,15 @@
 body {
     font-family: PeydaWebFaNum !important;
 }
+
+/* .samen-border { @apply border-2 rounded-xl sahdow-samen} */
+@layer components {
+	.samen-border {
+		@apply border-2 rounded-xl shadow-samen
+	}
+}
+
 .bg-yellow-samen{background-color: #FDB714;}
-.border-slate-samen{box-shadow: 0 1px 1px -1px rgba(0, 0, 0, 0.9)}
 .text-lg {font-size: 1rem;}
 .border-orange-samen{border-color :#FDB714; color: #FDB714;}
 .bg-gray-samen{background-color:#ededed}

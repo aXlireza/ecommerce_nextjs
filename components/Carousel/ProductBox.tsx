@@ -10,7 +10,7 @@ interface Props {
   link: string}
 
 const ProductBox: React.FC<Props> = ({ title, imgUrl, date, alt, link }) => {
-	return (<Link href={link} className={`flex flex-col items-center w-fit border-slate-samen border-2 rounded-xl m-auto`}>
+	return (<Link href={link} className={`flex flex-col items-center w-fit samen-border m-auto`}>
     <Image
       src={imgUrl}
       alt={alt}

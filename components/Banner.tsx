@@ -5,7 +5,7 @@ import React from 'react'
 
 const Banner: React.FC<Banner_d> = ({ title, link, description, imgUrl, alt }) => {
 	return (
-		<Link href={link} className='flex flex-row rounded-2xl overflow-hidden border-slate-samen border-2'>
+		<Link href={link} className='flex flex-row overflow-hidden samen-border'>
       <div className='flex flex-col p-5 py-10'>
         <h4 className='text-2xl font-bold text-black '>{title}</h4>
         <hr className='border-orange-200 my-2' />

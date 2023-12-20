@@ -25,7 +25,7 @@ interface Item {
 const Footer: React.FC<Props> = ({ logo_alt, tel, email, workSchedule, address, lists }) => {
 	return (
     <footer className='py-3 px-10 md:px-24 flex flex-col justify-center bg-white px-10 lg:px-24 py-5 gap-4'>
-      <hr className='border-slate-samen border-2 rounded-lg' />
+      <hr className='samen-border' />
       <Image
         src={'https://cloud.samentejarat.com/samen2 (1).webp'}
         alt={logo_alt}

@@ -13,11 +13,10 @@ const TeamMembers: React.FC<Props> = ({ teams }) => {
 
 	return (
 		<section className='px-10 lg:px-24 py-10 bg-white'>
-      <div className='rounded-lg bg-white border-2 border-slate-samen'>
+      <div className='bg-white samen-border divide-y'>
         <div className='flex flex-row gap-3 justify-center'>
           {teams.map(item => item.title).map((title, key) => <Heading key={key} underline={key == activeTab ? 'full' : undefined} text={title} color='border-yellow-600' customClasses='cursor-pointer' onClick={() => setActiveTab(key)} textClasses='' />)}
         </div>
-        <hr className='border-2 border-slate-samen' />
         <div className='flex flex-col gap-3 justify-center py-5'>
           {teams.map(item => item.members).map((members, key) => <Members key={key} active={key == activeTab} members={members} />)}
         </div>

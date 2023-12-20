@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import plugin from 'tailwindcss'
 
 const config: Config = {
   content: [
@@ -11,6 +12,9 @@ const config: Config = {
     extend: {
       colors: {
         samen: '#FDB714'
+      },
+      shadow: {
+        samen: 'box-shadow: 0 1px 1px -1px rgba(0, 0, 0, 0.9)'
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

@@ -23,7 +23,7 @@ const Hero: React.FC<Props> = ({ slides }) => {
 	return (
 		<section className='flex lg:flex-row flex-col items-center gap-5 px-10 lg:px-24 py-10 bg-white'>
       {/* the slider */}
-      <div className='lg:w-9/12 rounded-xl border-slate-samen border-2 overflow-hidden !h-[200px] sm:!h-[300px] md:!h-[300px] lg:!h-[400px] xl:!h-[400px] 2xl:!h-[500px]'>
+      <div className='lg:w-9/12 samen-border overflow-hidden !h-[200px] sm:!h-[300px] md:!h-[300px] lg:!h-[400px] xl:!h-[400px] 2xl:!h-[500px]'>
         <Swiper
           slidesPerView={1}
           spaceBetween={0}

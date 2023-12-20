@@ -192,7 +192,7 @@ const Header: React.FC<HeaderProps> = ({ logo_alt }) => {
   }
   
   return (
-    <header className="sticky top-0 z-20 flex flex-row justify-between items-center border-b-2 border-slate-samen py-3 px-10 md:px-24 bg-white">
+    <header className="sticky top-0 z-20 flex flex-row justify-between items-center border-b-2 shadow-samen py-3 px-10 md:px-24 bg-white">
 
       {/* the menu button for mobile */}
       <div className='lg:hidden text-black' onClick={updateMenuState}>
