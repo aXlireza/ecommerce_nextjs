@@ -4,12 +4,12 @@ interface Props {
 	text: string,
   underline?: 'full' | 'partial',
   onClick?: () => void,
-  color?: 'border-yellow-600' | string,
+  color?: string,
   customClasses?: string,
   textClasses?: string,
 }
 
-const Heading: React.FC<Props> = ({ text, underline, onClick, color='border-yellow-600', customClasses='', textClasses='' }) => {
+const Heading: React.FC<Props> = ({ text, underline='partial', onClick, color='border-samen-orange', customClasses='', textClasses='' }) => {
   let hr_style = ''
   switch (underline) {
     case 'full': hr_style = 'w-full';break;

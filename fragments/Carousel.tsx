@@ -18,7 +18,7 @@ const Carousel: React.FC<Props> = ({ title, rowOrCol, posts }) => {
 
 	return (
       <div className='rounded-lg'>
-        <Heading text={title} color='border-yellow-400' underline='partial' textClasses='text-xl' />
+        <Heading text={title} textClasses='text-xl' />
         <div className='py-5'>
           <Swiper
             slidesPerView={3}

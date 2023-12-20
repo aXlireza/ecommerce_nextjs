@@ -9,7 +9,7 @@ interface Props {
 const VerticalQuickSearch: React.FC<Props> = ({ title }) => {
 	return (
     <section className={`divide-y samen-border bg-white`}>
-      <Heading text={`جستجوی سریع ${title}`} underline={'partial'} color='border-yellow-600' />
+      <Heading text={`جستجوی سریع ${title}`} underline={'partial'} />
       <form className='w-full flex flex-row gap-4 p-6 items-center'>
         {/* Factory select options */}
         <CustomSelect rounded='full' options={[
