@@ -8,9 +8,9 @@ const Banner: React.FC<Banner_d> = ({ title, link, description, imgUrl, alt }) =
 		<Link href={link} className='flex flex-row overflow-hidden samen-border'>
       <div className='flex flex-col p-5 py-10'>
         <h4 className='text-2xl font-bold text-black '>{title}</h4>
-        <hr className='border-orange-200 my-2' />
+        <hr className='border-samen my-2' />
         <h5 className='text-base text-black '>{description}</h5>
-        <button className='bg-orange-400 mt-6 px-4 p-1 rounded-lg w-fit'>اطلاعات بیشتر</button>
+        <button className='bg-samen mt-6 px-4 p-1 rounded-lg w-fit'>اطلاعات بیشتر</button>
       </div>
       <div>
         <Image

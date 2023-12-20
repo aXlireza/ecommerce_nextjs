@@ -24,7 +24,7 @@ const Post: React.FC<Props> = ({ post: { title, link, imgUrl, alt, btnText }, ro
       />
       <div className={`flex ${rowOrCol} gap-3`}>
         <h4 className='text-black text-xl'>{title}</h4>
-        <button className='text-orange-400 bg-white border-2 border-orange-samen px-5 rounded-lg w-fit'>{btnText}</button>
+        <button className='text-samen bg-white border-2 border-samen px-5 rounded-lg w-fit'>{btnText}</button>
       </div>
 		</Link>
 	)
