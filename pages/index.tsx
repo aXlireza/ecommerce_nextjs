@@ -28,7 +28,7 @@ export default function Home() {
         },
       ]} />
 
-      <section className='px-10 lg:px-24 py-10 bg-samen-gray'>
+      <section className='samen-container-padding bg-samen-gray'>
         <TabbedCarousel data={[
           {
             head: {
@@ -239,7 +239,7 @@ export default function Home() {
         },
       ]} />
 
-      <section className='px-10 lg:px-24 py-10 samen-lightbg'>
+      <section className='samen-container-padding samen-lightbg'>
         <Carousel title='پایگاه دانش ثامن تجارت' rowOrCol='flex-col' posts={[
           {
             imgUrl: 'https://i.postimg.cc/SNdx6j0q/sa5.jpg',
@@ -281,7 +281,7 @@ export default function Home() {
         ]} />
       </section>
 
-      <section className='px-10 lg:px-24 py-10 bg-white'>
+      <section className='samen-container-padding bg-white'>
         <Carousel title='فرصت های همکاری' rowOrCol='flex-row justify-between mt-2' posts={[
           {
             imgUrl: 'https://i.postimg.cc/prtLZFXV/s8.jpg',

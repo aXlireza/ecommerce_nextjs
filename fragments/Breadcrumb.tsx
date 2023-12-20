@@ -5,7 +5,7 @@ import { FiArrowLeft } from 'react-icons/fi'
 
 const Breadcrumb: React.FC<Breadcrumb> = ({ items }) => {
   return (
-    <nav className='flex flex-row items-center my-3'>
+    <nav className='flex flex-row items-center my-3 samen-container-padding !py-0'>
       {items.map((item, key) => (
         // on small screen width, it will replace the last item in breadcumb with ... since it already is the current page
         // that's the least I can do due to the lack of instructions

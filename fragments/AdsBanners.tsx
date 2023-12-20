@@ -5,7 +5,7 @@ interface Props {
   items: AdsBanner_d[]
 }
 const AdsBanners: React.FC<Props> = ({ items }) => {
-  return <section>
+  return <section className="samen-container-padding !py-0">
     {items.map((item, key) => <AdsBanner key={key} {...item} />)}
   </section>
 }

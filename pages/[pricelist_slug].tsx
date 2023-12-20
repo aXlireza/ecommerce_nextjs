@@ -50,7 +50,7 @@ const Pricelist: React.FC<Props> = ({ currentPage, parentPage, factories }) => {
           link: '#'
         },
       ]} />
-      <section>
+      <section className="samen-container-padding">
         {/* main bar */}
         <section className="flex flex-col gap-3">
           <Cta tel="۰۲۱۹۱۰۰۳۱۸۱" />
