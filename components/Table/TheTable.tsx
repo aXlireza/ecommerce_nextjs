@@ -10,7 +10,7 @@ interface Props {
 const colStyle = "font-medium text-center"
 
 const TheTable: React.FC<Props> = ({ products, rateState, rateValue='0' }) => {
-	return (<table className="table-auto rounded-lg overflow-hidden">
+	return (<table className="table-auto overflow-hidden samen-border">
     {/* table head */}
     <thead className="relative">
       <tr className="h-12 relative bg-[#ffd579]">

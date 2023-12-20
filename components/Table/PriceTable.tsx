@@ -14,7 +14,7 @@ const PriceTable: React.FC<Props> = ({ nav, products }) => {
 
 	return (
     <section className='flex flex-col'>
-        <div className='flex flex-col samen-border'>
+        <div className='flex flex-col gap-2'>
             <TableNav {...nav} rateFunc={() => setRateActive(prevState => !prevState)} rateActive={rateActive}  />
             <TheTable products={products} rateState={rateActive} rateValue={nav.rateValue} />
         </div>
