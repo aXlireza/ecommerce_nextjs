@@ -13,8 +13,7 @@ const TheTable: React.FC<Props> = ({ products, rateState, rateValue='0' }) => {
 	return (<table className="table-auto rounded-lg overflow-hidden">
     {/* table head */}
     <thead className="relative">
-      <div className="bg-samen-orange opacity-50 absolute w-full h-full"></div>
-      <tr className="h-12 relative">
+      <tr className="h-12 relative bg-[#ffd579]">
         <th className={colStyle}>کالا</th>
         <th className={colStyle}>کارخانه</th>
         <th className={colStyle}>سایز</th>
