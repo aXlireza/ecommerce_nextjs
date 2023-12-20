@@ -10,7 +10,7 @@ import Carousel from '@/fragments/Carousel'
 
 export default function Home() {
   return (
-    <main className='flex flex-col bg-slate-100'>
+    <main className='flex flex-col samen-lightbg'>
       
       <Hero slides={[
         {
@@ -239,7 +239,7 @@ export default function Home() {
         },
       ]} />
 
-      <section className='px-10 lg:px-24 py-10 bg-slate-100'>
+      <section className='px-10 lg:px-24 py-10 samen-lightbg'>
         <Carousel title='پایگاه دانش ثامن تجارت' rowOrCol='flex-col' posts={[
           {
             imgUrl: 'https://i.postimg.cc/SNdx6j0q/sa5.jpg',

@@ -20,7 +20,7 @@ const TheTable: React.FC<Props> = ({ products }) => {
     </thead>
     {/* table body */}
     <tbody>
-      {products.map((product, key) => <tr className={`odd:bg-slate-100 even:bg-white py-2 h-10`} key={key}>
+      {products.map((product, key) => <tr className={`odd:samen-lightbg even:bg-white py-2 h-10`} key={key}>
         <td className={colStyle}>{product.title}</td>
         <td className={colStyle}>{product.factoryName}</td>
         <td className={colStyle}>{product.size}</td>

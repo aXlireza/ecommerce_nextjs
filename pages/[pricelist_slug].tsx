@@ -22,7 +22,7 @@ interface PageBasicInfo {
 const Pricelist: React.FC<Props> = ({ currentPage, parentPage, factories }) => {
 
   return (
-    <main className='flex flex-col bg-slate-100'>
+    <main className='flex flex-col samen-lightbg'>
       {/* Process the items to include the keyword "قیمت"
       since the original format of the titles must be kept and used */}
       <Breadcrumb items={[

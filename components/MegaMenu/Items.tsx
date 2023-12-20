@@ -35,7 +35,7 @@ const MenuItem: React.FC<MegamenuItem> = ({ icon, text, link, subcategories }) =
   return (
     <div className='flex flex-row' onMouseEnter={() => toggleDropdown(true)} onMouseLeave={() => toggleDropdown(false)}>
 
-        <Link href={link} className={`${isOpen ? 'bg-slate-300 text-red-700' : 'samen-text bg-slate-100'} transition flex flex-row items-center w-48 p-3 justify-between cursor-pointer`}>
+        <Link href={link} className={`${isOpen ? 'samen-semilightbg text-red-700' : 'samen-text samen-lightbg'} transition flex flex-row items-center w-48 p-3 justify-between cursor-pointer`}>
 
           {/* title and the associated icon */}
           <div className='flex flex-row items-center gap-1'>
@@ -51,7 +51,7 @@ const MenuItem: React.FC<MegamenuItem> = ({ icon, text, link, subcategories }) =
 
         {/* the secondary flyout menu that appear as a primary column item is hovered */}
         <div className='max-w-0 max-h-0'>
-          <div className={`bg-slate-300 top-0 overflow-hidden flex flex-col absolute ${isOpen ? 'max-h-screen w-max py-2 px-4' : 'max-h-0 max-w-0'}`}>
+          <div className={`samen-semilightbg top-0 overflow-hidden flex flex-col absolute ${isOpen ? 'max-h-screen w-max py-2 px-4' : 'max-h-0 max-w-0'}`}>
 
             {/* The mengameny btn */}
             <div className='flex flex-row items-center gap-2 samen-text'>
