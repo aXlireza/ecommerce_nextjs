@@ -18,7 +18,7 @@ const Heading: React.FC<Props> = ({ text, underline, onClick, color='border-yell
   }
 	return (
 		<div onClick={onClick} className={customClasses}>
-      <h3 className={`p-3 ${textClasses || 'text-lg'} font-bold text-black`}>{text}</h3>
+      <h3 className={`p-3 ${textClasses || 'text-base'} font-bold text-black`}>{text}</h3>
       <hr className={`${color} border-2 rounded-lg ${hr_style}`} />
     </div>
 	)

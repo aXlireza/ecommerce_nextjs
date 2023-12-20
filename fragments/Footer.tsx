@@ -42,7 +42,7 @@ const Footer: React.FC<Props> = ({ logo_alt, tel, email, workSchedule, address, 
         <div className='flex flex-row justify-between w-max gap-10'>
           {lists.map((list, key) => (
             <ul key={key} className='text-md text-slate-700'>
-              <li className='text-lg font-bold text-slate-900'><Link href={list.head.link}>{list.head.title}</Link></li>
+              <li className='text-base font-bold text-slate-900'><Link href={list.head.link}>{list.head.title}</Link></li>
               {list.items.map((item, key) => <li key={key}><Link href={item.link}>{item.title}</Link></li>)}
             </ul>
           ))}
