@@ -94,7 +94,7 @@ export async function getStaticProps({params}: any) {
           title: 'میلگرد آجدار نیشابور',
           date: 'امروز ۱۱:۱۵',
           upToDate: true,
-          rateValue: '0.9',
+          rateValue: '0.09',
         },
         products: [
           {
@@ -128,7 +128,7 @@ export async function getStaticProps({params}: any) {
           title: 'میلگرد آجدار نیشابور',
           date: 'به روزرسانی:‌دیروز ۱۱:۱۵',
           upToDate: false,
-          rateValue: '0.9',
+          rateValue: '0.09',
         },
         products: [
           {
