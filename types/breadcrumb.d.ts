@@ -1,8 +1,8 @@
-export type Breadcrumb {
+export type Breadcrumb = {
 	items: Item[],
 }
 
-type Item {
+type Item = {
   title: string,
   link: string
 }

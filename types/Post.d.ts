@@ -1,4 +1,4 @@
-export type Post {
+export type Post = {
   title: string,
 	link: string,
   imgUrl: string,

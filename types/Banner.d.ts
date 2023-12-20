@@ -1,4 +1,4 @@
-export type Banner {
+export type Banner = {
   title: string,
   description: string,
   imgUrl: string,

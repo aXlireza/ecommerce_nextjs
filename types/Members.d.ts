@@ -1,9 +1,9 @@
-export type Team {
+export type Team = {
   title: string,
   members: Member[]
 }
 
-export type Member {
+export type Member = {
   imgUrl: string,
   alt: string,
   name: string,
