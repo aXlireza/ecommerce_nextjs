@@ -4,7 +4,7 @@ import AdsBanners from "@/fragments/AdsBanners"
 import Breadcrumb from "@/fragments/Breadcrumb"
 import Cta from "@/fragments/Cta"
 import PriceTables from "@/fragments/PriceTables"
-import VerticalQuickSearch from "@/fragments/Vertical-QuickSearch"
+import VerticalQuickSearch from "@/fragments/Filter/Vertical-QuickSearch"
 import { Factory } from "@/types/Table"
 
 interface Props {
@@ -51,14 +51,20 @@ const Pricelist: React.FC<Props> = ({ currentPage, parentPage, factories }) => {
         },
       ]} />
       <section className="samen-container-padding">
+
         {/* main bar */}
         <section className="flex flex-col gap-3">
           <Cta tel="۰۲۱۹۱۰۰۳۱۸۱" />
           <VerticalQuickSearch title={currentPage.title} />
           <PriceTables factories={factories} />
         </section>
+
         {/* sidebar */}
-        <section></section>
+        <section>
+    
+          
+        </section>
+
       </section>
     </main>
   )

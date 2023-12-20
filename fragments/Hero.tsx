@@ -1,6 +1,5 @@
-import Heading from '@/components/Heading'
 import React from 'react'
-import QuickSearch from './Quick-Serach'
+import QuickSearch from './Filter/Quick-Serach'
 import Image from 'next/image'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
