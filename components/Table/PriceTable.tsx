@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import TableNav from './Nav'
 import { FactoryInfo, Product } from '@/types/Table'
 import TheTable from './TheTable'
+import Toolsbar from './Toolsbar'
 
 interface Props {
     nav: FactoryInfo,
@@ -15,6 +16,7 @@ const PriceTable: React.FC<Props> = ({ nav, products }) => {
     <section className='flex flex-col gap-2'>
         <TableNav {...nav} rateFunc={() => setRateActive(prevState => !prevState)} rateActive={rateActive}  />
         <TheTable products={products} rateState={rateActive} rateValue={nav.rateValue} />
+        <Toolsbar />
     </section>
 	)
 }
