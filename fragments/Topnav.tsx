@@ -15,7 +15,7 @@ const Topnav: React.FC<TopnavProps> = ({ lastupdate, prices, date1, date2 }) => 
   )
 
   return (
-    <nav className="bg-yellow-samen py-2 px-10 md:px-24 flex flex-row items-center justify-between">
+    <nav className="bg-samen py-2 px-10 md:px-24 flex flex-row items-center justify-between">
 
         {/* <!-- Other side of the Nav, like Search or Profile --> */}
         <div className="text-slate-900 text-md font-medium">

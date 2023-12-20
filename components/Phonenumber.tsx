@@ -16,7 +16,7 @@ const Phonenumber: React.FC<Props> = ({ number }) => {
 			</div>
 			<div className='relative'>
 				<span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-500 opacity-75"></span>
-				<FiPhone className="bg-yellow-samen rounded-full fill-black stroke-none p-2 w-10 h-10" />
+				<FiPhone className="bg-samen rounded-full fill-black stroke-none p-2 w-10 h-10" />
 			</div>
 		</Link>
 	)
