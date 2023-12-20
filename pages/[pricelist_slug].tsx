@@ -5,7 +5,7 @@ import Breadcrumb from "@/fragments/Breadcrumb"
 import Cta from "@/fragments/Cta"
 import PriceTables from "@/fragments/PriceTables"
 import VerticalQuickSearch from "@/fragments/Vertical-QuickSearch"
-import { Factory } from "@/types/Factory"
+import { Factory } from "@/types/Table"
 
 interface Props {
   currentPage: PageBasicInfo,
@@ -92,42 +92,62 @@ export async function getStaticProps({params}: any) {
       {
         info: {
           title: 'میلگرد آجدار نیشابور',
-          date: 'امروز ۱۱:۱۵'
+          date: 'امروز ۱۱:۱۵',
+          upToDate: true
         },
         products: [
           {
-            title: 'نیشابور',
+            title: 'میلگرد آجدار',
             factoryName: 'نیشابور',
-            size: 'نیشابور',
-            standard: 'نیشابور',
-            price: 'نیشابور',
+            size: '۱۲',
+            standard: '۱۲',
+            price: '۲۲۷.۰۰۰',
           },{
-            title: 'نیشابور',
+            title: 'میلگرد آجدار',
             factoryName: 'نیشابور',
-            size: 'نیشابور',
-            standard: 'نیشابور',
-            price: 'نیشابور',
+            size: '۱۲',
+            standard: '۱۲',
+            price: '۲.۰۰۰',
           },{
-            title: 'نیشابور',
+            title: 'میلگرد آجدار',
             factoryName: 'نیشابور',
-            size: 'نیشابور',
-            standard: 'نیشابور',
-            price: 'نیشابور',
+            size: '۱۲',
+            standard: '۱۲',
+            price: '۱.۲۲۷.۰۰۰',
+          },{
+            title: 'میلگرد آجدار',
+            factoryName: 'نیشابور',
+            size: '۱۲',
+            standard: '۱۲',
+            price: '۲۲۷.۰۰۰',
           },
         ]
       },{
         info: {
           title: 'میلگرد آجدار نیشابور',
-          date: 'امروز ۱۱:۱۵'
+          date: 'به روزرسانی:‌دیروز ۱۱:۱۵',
+          upToDate: false
         },
         products: [
           {
-            title: 'نیشابور',
+            title: 'میلگرد آجدار',
             factoryName: 'نیشابور',
-            size: 'نیشابور',
-            standard: 'نیشابور',
-            price: 'نیشابور',
-          }
+            size: '۱۲',
+            standard: '۱۲',
+            price: '۲۲۷.۰۰۰',
+          },{
+            title: 'میلگرد آجدار',
+            factoryName: 'نیشابور',
+            size: '۱۲',
+            standard: '۱۲',
+            price: '۲۲۷.۰۰۰',
+          },{
+            title: 'میلگرد آجدار',
+            factoryName: 'نیشابور',
+            size: '۱۲',
+            standard: '۱۲',
+            price: '۲۲۷.۰۰۰',
+          },
         ]
       }
     ]

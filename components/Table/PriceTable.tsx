@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
 import TableNav from './Nav'
-import { NavSource } from '@/types/Table'
+import { FactoryInfo, Product } from '@/types/Table'
 import TheTable from './TheTable'
-import { Product } from '@/types/Factory'
 
 interface Props {
-    nav: NavSource,
+    nav: FactoryInfo,
     products: Product[]
 }
 

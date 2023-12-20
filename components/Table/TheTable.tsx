@@ -1,4 +1,4 @@
-import { Product } from "@/types/Factory"
+import { Product } from "@/types/Table"
 
 interface Props {
   products: Product[]
