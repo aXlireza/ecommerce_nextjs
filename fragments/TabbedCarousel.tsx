@@ -7,7 +7,7 @@ interface Props {
 	data: Item[]
 }
 
-const TabbedCarousel: React.FC<Props> = ({ data }) => {
+export default function TabbedCarousel({ data }: Props) {
 
   const [activeTab, setActiveTab] = useState(0)
 
@@ -23,5 +23,3 @@ const TabbedCarousel: React.FC<Props> = ({ data }) => {
       </div>
 	)
 }
-
-export default TabbedCarousel

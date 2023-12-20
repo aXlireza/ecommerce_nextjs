@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { FiChevronLeft, FiCpu } from 'react-icons/fi';
 import { MegamenuItem, MegamenuSubItem } from '@/types/megamenu';
 
-const MenuItem: React.FC<MegamenuItem> = ({ icon, text, link, subcategories }) => {
+export default function MenuItem({ icon, text, link, subcategories }: MegamenuItem) {
   
   // Function to toggle the dropdown
   const [isOpen, setIsOpen] = useState(false);
@@ -70,5 +70,3 @@ const MenuItem: React.FC<MegamenuItem> = ({ icon, text, link, subcategories }) =
       </div>
   );
 }
-
-export default MenuItem;

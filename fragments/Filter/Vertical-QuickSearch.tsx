@@ -6,7 +6,7 @@ interface Props {
   title: string,
 }
 
-const VerticalQuickSearch: React.FC<Props> = ({ title }) => {
+export default function VerticalQuickSearch({ title }: Props) {
 	return (
     <section className={`divide-y samen-border bg-white`}>
       <Heading text={`جستجوی سریع ${title}`} underline={'partial'} />
@@ -71,5 +71,3 @@ const VerticalQuickSearch: React.FC<Props> = ({ title }) => {
     </section>
 	)
 }
-
-export default VerticalQuickSearch

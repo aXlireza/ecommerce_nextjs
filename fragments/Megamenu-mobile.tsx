@@ -8,7 +8,7 @@ interface Props {
 }
 
 
-const MegamenuMobile: React.FC<Props> = ({ items }) => {
+export default function MegamenuMobile({ items }: Props) {
 	return (
 		<section className='h-fit'>
 			<div className='flex flex-row items-center gap-3 p-2.5 samen-text'>
@@ -20,5 +20,3 @@ const MegamenuMobile: React.FC<Props> = ({ items }) => {
 		</section>
 	)
 }
-
-export default MegamenuMobile

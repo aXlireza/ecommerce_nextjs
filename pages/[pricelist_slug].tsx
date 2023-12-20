@@ -19,7 +19,7 @@ interface PageBasicInfo {
   link: string,
 }
 
-const Pricelist: React.FC<Props> = ({ currentPage, parentPage, factories }) => {
+export default function Pricelist({ currentPage, parentPage, factories }: Props) {
 
   return (
     <main className='flex flex-col samen-lightbg'>
@@ -165,5 +165,3 @@ export async function getStaticProps({params}: any) {
     props: props
   }
 }
-
-export default Pricelist

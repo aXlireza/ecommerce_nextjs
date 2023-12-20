@@ -6,7 +6,7 @@ interface Props {
 	brands: Brand_d[],
 }
 
-const Brands: React.FC<Props> = ({ brands }) => {
+export default function Brands({ brands }: Props) {
 	return (
     <section className='flex justify-center bg-white samen-container-padding'>
       <section className='flex flex-row flex-wrap py-8 gap-6 overflow-x-hidden w-fit justify-center'>
@@ -15,5 +15,3 @@ const Brands: React.FC<Props> = ({ brands }) => {
     </section>
 	)
 }
-
-export default Brands

@@ -2,7 +2,7 @@ import { AdsBanner } from "@/types/AdsBanner";
 import Image from "next/image";
 import Link from "next/link";
 
-const AdsBanner: React.FC<AdsBanner> = ({ imgUrl, alt, link }) => {
+export default function AdsBanner({ imgUrl, alt, link }: AdsBanner) {
   return <Link href={link}><Image
     src={imgUrl}
     alt={alt}
@@ -15,5 +15,3 @@ const AdsBanner: React.FC<AdsBanner> = ({ imgUrl, alt, link }) => {
     className="samen-border overflow-hidden"
   /></Link>
 }
-
-export default AdsBanner

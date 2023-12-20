@@ -9,7 +9,7 @@ interface Props {
   textClasses?: string,
 }
 
-const Heading: React.FC<Props> = ({ text, underline='partial', onClick, color='border-samen-orange', customClasses='', textClasses='' }) => {
+export default function Heading({ text, underline='partial', onClick, color='border-samen-orange', customClasses='', textClasses='' }: Props) {
   let hr_style = ''
   switch (underline) {
     case 'full': hr_style = 'w-full';break;
@@ -23,5 +23,3 @@ const Heading: React.FC<Props> = ({ text, underline='partial', onClick, color='b
     </div>
 	)
 }
-
-export default Heading

@@ -5,7 +5,7 @@ import { convertToEng } from '@/lib/number'
 import { Member } from '@/types/Members'
 import Image from 'next/image'
 
-const Member: React.FC<Member> = ({ imgUrl, alt, name, role, tel }) => {
+export default function Member({ imgUrl, alt, name, role, tel }: Member) {
 	return (
 		<article className="flex flex-row w-fit gap-3 samen-border p-3">
 			<Image
@@ -26,5 +26,3 @@ const Member: React.FC<Member> = ({ imgUrl, alt, name, role, tel }) => {
 		</article>
 	)
 }
-
-export default Member

@@ -9,7 +9,7 @@ interface Props {
   date: string,
   link: string}
 
-const ProductBox: React.FC<Props> = ({ title, imgUrl, date, alt, link }) => {
+export default function ProductBox({ title, imgUrl, date, alt, link }: Props) {
 	return (<Link href={link} className={`flex flex-col items-center w-fit samen-border m-auto`}>
     <Image
       src={imgUrl}
@@ -25,5 +25,3 @@ const ProductBox: React.FC<Props> = ({ title, imgUrl, date, alt, link }) => {
     </div>
   </Link>)
 }
-
-export default ProductBox

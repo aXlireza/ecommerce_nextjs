@@ -1,13 +1,13 @@
 import React from 'react';
 
-interface TopnavProps {
+interface Props {
   lastupdate: string,
   prices: string[],
   date1: string,
   date2: string,
 }
 
-const Topnav: React.FC<TopnavProps> = ({ lastupdate, prices, date1, date2 }) => {
+export default function Topnav({ lastupdate, prices, date1, date2 }: Props) {
   const price = (text: string, key: number) => (
     <span key={key} className="samen-text text-md font-medium">
       {text}
@@ -37,5 +37,3 @@ const Topnav: React.FC<TopnavProps> = ({ lastupdate, prices, date1, date2 }) => 
     </nav>
   )
 }
-
-export default Topnav;

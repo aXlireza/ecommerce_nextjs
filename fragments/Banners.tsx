@@ -6,7 +6,7 @@ interface Props {
 	banners: Banner_d[],
 }
 
-const Banners: React.FC<Props> = ({ banners }) => {
+export default function Banners({ banners }: Props) {
 	return (
     <section className='flex justify-center bg-white samen-container-padding !py-0'>
       <section className='flex flex-row flex-wrap py-8 gap-6 overflow-x-hidden w-fit justify-center'>
@@ -15,5 +15,3 @@ const Banners: React.FC<Props> = ({ banners }) => {
     </section>
 	)
 }
-
-export default Banners

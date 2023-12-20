@@ -18,7 +18,7 @@ interface Slide {
   link: string,
 }
 
-const Hero: React.FC<Props> = ({ slides }) => {
+export default function Hero({ slides }: Props) {
 	return (
 		<section className='flex lg:flex-row flex-col items-center gap-5 samen-container-padding bg-white'>
       {/* the slider */}
@@ -61,5 +61,3 @@ const Hero: React.FC<Props> = ({ slides }) => {
     </section>
 	)
 }
-
-export default Hero

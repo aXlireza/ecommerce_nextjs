@@ -7,7 +7,7 @@ interface Props {
 	number: string,
 }
 
-const Phonenumber: React.FC<Props> = ({ number }) => {
+export default function Phonenumber({ number }: Props) {
 	return (
 		<Link href={`tel:+98${convertToEng(number.slice(1).replaceAll(' ', '').replaceAll('-', ''))}`} className="samen-text flex flex-row items-center gap-2">
 			<div className={'flex-col hidden xl:!flex'}>
@@ -21,5 +21,3 @@ const Phonenumber: React.FC<Props> = ({ number }) => {
 		</Link>
 	)
 }
-
-export default Phonenumber

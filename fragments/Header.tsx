@@ -10,11 +10,11 @@ import { FiMenu } from 'react-icons/fi';
 import MegamenuMobile from './Megamenu-mobile';
 import Link from 'next/link';
 
-interface HeaderProps {
+interface Props {
   logo_alt: string,
 }
 
-const Header: React.FC<HeaderProps> = ({ logo_alt }) => {
+export default function Header({ logo_alt }: Props) {
 
   const [headerItems, setheaderItems] = useState([
     {
@@ -236,5 +236,3 @@ const Header: React.FC<HeaderProps> = ({ logo_alt }) => {
     </header>
   )
 }
-
-export default Header;

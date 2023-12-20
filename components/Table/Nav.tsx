@@ -2,7 +2,7 @@ import { Nav } from '@/types/Table';
 import React from 'react'
 import { FiCheck, FiClock } from 'react-icons/fi';
 
-const TableNav: React.FC<Nav> = ({ rateActive=false, title, date, rateFunc, upToDate=true }) => {
+export default function TableNav({ rateActive=false, title, date, rateFunc, upToDate=true }: Nav) {
 	return (
     <section className="relative w-full flex items-center bg-white justify-between overflow-hidden samen-border">
 			{/* right part */}
@@ -32,5 +32,3 @@ const TableNav: React.FC<Nav> = ({ rateActive=false, title, date, rateFunc, upTo
     </section>
   );
 }
-
-export default TableNav

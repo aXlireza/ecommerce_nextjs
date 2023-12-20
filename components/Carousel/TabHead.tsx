@@ -9,7 +9,7 @@ interface Props {
   onClick: ()=>void
 }
 
-const TabHead: React.FC<Props> = ({ active, title, imgUrl, alt, onClick }) => {
+export default function TabHead({ active, title, imgUrl, alt, onClick }: Props) {
 	return (<div className='flex flex-col pt-5 items-center w-fit cursor-pointer' onClick={onClick}>
     <Image
       src={imgUrl}
@@ -21,5 +21,3 @@ const TabHead: React.FC<Props> = ({ active, title, imgUrl, alt, onClick }) => {
     <hr className={`${active ? 'border-samen-orange border-2' : 'border-0'} w-full`} />
   </div>)
 }
-
-export default TabHead

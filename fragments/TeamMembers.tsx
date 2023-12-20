@@ -8,7 +8,7 @@ interface Props {
 	teams: Team[],
 }
 
-const TeamMembers: React.FC<Props> = ({ teams }) => {
+export default function TeamMembers({ teams }: Props) {
   const [activeTab, setActiveTab] = useState(0)
 
 	return (
@@ -24,5 +24,3 @@ const TeamMembers: React.FC<Props> = ({ teams }) => {
     </section>
 	)
 }
-
-export default TeamMembers

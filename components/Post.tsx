@@ -8,7 +8,7 @@ interface Props {
   rowOrCol: string
 }
 
-const Post: React.FC<Props> = ({ post: { title, link, imgUrl, alt, btnText }, rowOrCol='flex-col' }) => {
+export default function Post({ post: { title, link, imgUrl, alt, btnText }, rowOrCol='flex-col' }: Props) {
 	return (
 		<Link href={link} className="flex flex-col gap-2 m-auto">
       <Image
@@ -29,5 +29,3 @@ const Post: React.FC<Props> = ({ post: { title, link, imgUrl, alt, btnText }, ro
 		</Link>
 	)
 }
-
-export default Post

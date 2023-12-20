@@ -9,7 +9,7 @@ interface Props {
     products: Product[]
 }
 
-const PriceTable: React.FC<Props> = ({ nav, products }) => {
+export default function PriceTable({ nav, products }: Props) {
     const [rateActive, setRateActive] = useState(false)
 
 	return (
@@ -22,5 +22,3 @@ const PriceTable: React.FC<Props> = ({ nav, products }) => {
     </section>
 	)
 }
-
-export default PriceTable

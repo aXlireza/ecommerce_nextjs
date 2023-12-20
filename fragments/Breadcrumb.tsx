@@ -3,7 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 import { FiArrowLeft } from 'react-icons/fi'
 
-const Breadcrumb: React.FC<Breadcrumb> = ({ items }) => {
+export default function Breadcrumb({ items }: Breadcrumb) {
   return (
     <nav className='flex flex-row items-center my-3 samen-container-padding !py-0'>
       {items.map((item, key) => (
@@ -19,5 +19,3 @@ const Breadcrumb: React.FC<Breadcrumb> = ({ items }) => {
     </nav>
 	)
 }
-
-export default Breadcrumb

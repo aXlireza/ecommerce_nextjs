@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-const Brand: React.FC<Brand> = ({ imgUrl, alt, link }) => {
+export default function Brand({ imgUrl, alt, link }: Brand) {
 	return (
 		<Link href={link} className='flex flex-col items-center'>
       <Image
@@ -16,5 +16,3 @@ const Brand: React.FC<Brand> = ({ imgUrl, alt, link }) => {
     </Link>
 	)
 }
-
-export default Brand

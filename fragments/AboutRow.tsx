@@ -7,7 +7,7 @@ interface Props {
   poster: string
 }
 
-const AboutRow: React.FC<Props> = ({ description, videoUrl, poster }) => {
+export default function AboutRow({ description, videoUrl, poster }: Props) {
 
   const [showControls, setShowControls] = useState(false);
 
@@ -25,5 +25,3 @@ const AboutRow: React.FC<Props> = ({ description, videoUrl, poster }) => {
     </section>
 	)
 }
-
-export default AboutRow

@@ -4,7 +4,7 @@ interface Props {
   bgcolor: 'white' | 'samen-gray'
 }
 
-const Toolsbar: React.FC<Props> = ({ bgcolor }) => {
+export default function Toolsbar({ bgcolor }: Props) {
 
 	return (
     <section className='w-full -mt-1'>
@@ -24,5 +24,3 @@ const Toolsbar: React.FC<Props> = ({ bgcolor }) => {
     </section>
 	)
 }
-
-export default Toolsbar

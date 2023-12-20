@@ -8,7 +8,7 @@ interface Props {
 }
 
 
-const Megamenu: React.FC<Props> = ({ items }) => {
+export default function Megamenu({ items }: Props) {
 
 	// Function to toggle the dropdown
 	const [isOpen, setIsOpen] = useState(false);
@@ -26,5 +26,3 @@ const Megamenu: React.FC<Props> = ({ items }) => {
 		</section>
 	)
 }
-
-export default Megamenu

@@ -5,7 +5,7 @@ interface Props {
   factories: Factory[]
 }
 
-const PriceTables: React.FC<Props> = ({ factories }) => {
+export default function PriceTables({ factories }: Props) {
 
 	return (<section className='flex flex-col gap-5'>
     {factories.map((factory, key) => <PriceTable
@@ -15,5 +15,3 @@ const PriceTables: React.FC<Props> = ({ factories }) => {
     />)}
   </section>)
 }
-
-export default PriceTables

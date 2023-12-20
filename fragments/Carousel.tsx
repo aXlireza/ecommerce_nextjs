@@ -14,7 +14,7 @@ interface Props {
   posts: Post_d[]
 }
 
-const Carousel: React.FC<Props> = ({ title, rowOrCol, posts }) => {
+export default function Carousel({ title, rowOrCol, posts }: Props) {
 
 	return (
       <div className='rounded-lg'>
@@ -65,5 +65,3 @@ const Carousel: React.FC<Props> = ({ title, rowOrCol, posts }) => {
       </div>
 	)
 }
-
-export default Carousel

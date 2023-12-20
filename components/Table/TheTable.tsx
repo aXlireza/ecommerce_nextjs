@@ -9,7 +9,7 @@ interface Props {
 
 const colStyle = "font-medium text-center"
 
-const TheTable: React.FC<Props> = ({ products, rateState, rateValue='0' }) => {
+export default function TheTable({ products, rateState, rateValue='0' }: Props) {
 	return (<table className="table-auto overflow-hidden samen-border">
     {/* table head */}
     <thead className="relative">
@@ -33,5 +33,3 @@ const TheTable: React.FC<Props> = ({ products, rateState, rateValue='0' }) => {
     </tbody>
   </table>)
 }
-
-export default TheTable

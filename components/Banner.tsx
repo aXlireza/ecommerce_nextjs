@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-const Banner: React.FC<Banner_d> = ({ title, link, description, imgUrl, alt }) => {
+export default function Banner({ title, link, description, imgUrl, alt }: Banner_d) {
 	return (
 		<Link href={link} className='flex flex-row overflow-hidden samen-border'>
       <div className='flex flex-col p-5 py-10'>
@@ -23,5 +23,3 @@ const Banner: React.FC<Banner_d> = ({ title, link, description, imgUrl, alt }) =
 		</Link>
 	)
 }
-
-export default Banner

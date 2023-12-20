@@ -4,7 +4,7 @@ import React from 'react'
 
 interface Props {}
 
-const QuickSearch: React.FC<Props> = ({ }) => {
+export default function QuickSearch({ }: Props) {
 	return (
     <section className='divide-y samen-border'>
       <Heading text="جستجوی سریع قیمت" underline={'partial'} />
@@ -58,5 +58,3 @@ const QuickSearch: React.FC<Props> = ({ }) => {
     </section>
 	)
 }
-
-export default QuickSearch

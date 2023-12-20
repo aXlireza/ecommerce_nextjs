@@ -14,7 +14,7 @@ interface SocialMedia {
   link: string
 }
 
-const SocketBar: React.FC<Props> = ({ medias }) => {
+export default function SocketBar({ medias }: Props) {
   return (
     <section className="bg-white px-10 md:px-24">
       <hr className='shadow-samen' />
@@ -33,5 +33,3 @@ const SocketBar: React.FC<Props> = ({ medias }) => {
     </section>
   )
 }
-
-export default SocketBar;

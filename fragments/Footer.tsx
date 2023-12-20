@@ -22,7 +22,7 @@ interface Item {
   link: string,
 }
 
-const Footer: React.FC<Props> = ({ logo_alt, tel, email, workSchedule, address, lists }) => {
+export default function Footer({ logo_alt, tel, email, workSchedule, address, lists }: Props) {
 	return (
     <footer className='py-3 px-10 md:px-24 flex flex-col justify-center bg-white px-10 lg:px-24 py-5 gap-4'>
       <hr className='shadow-samen' />
@@ -51,5 +51,3 @@ const Footer: React.FC<Props> = ({ logo_alt, tel, email, workSchedule, address, 
     </footer>
 	)
 }
-
-export default Footer

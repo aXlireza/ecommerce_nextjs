@@ -13,7 +13,7 @@ interface Props {
   items: Box[]
 }
 
-const TabBody: React.FC<Props> = ({ active, items }) => {
+export default function TabBody({ active, items }: Props) {
 	return (<div className={`items-center ${active ? '!flex' : 'hidden'}`}>
   <Swiper
     slidesPerView={4}
@@ -52,5 +52,3 @@ const TabBody: React.FC<Props> = ({ active, items }) => {
   </Swiper>
 </div>)
 }
-
-export default TabBody

@@ -7,12 +7,10 @@ interface Props {
   members: Member_d[]
 }
 
-const Members: React.FC<Props> = ({ active, members }) => {
+export default function Members({ active, members }: Props) {
 	return (
 		<section className={`${active ? '!flex' : 'hidden'} flex-row flex-wrap justify-center items-center gap-5`}>
 			{members.map((member, key) => <Member key={key} name={member.name} role={member.role} imgUrl={member.imgUrl} alt={member.alt} tel={member.tel} />)}
 		</section>
 	)
 }
-
-export default Members

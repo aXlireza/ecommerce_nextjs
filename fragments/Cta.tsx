@@ -6,7 +6,7 @@ interface Props {
   tel: string,
 }
 
-const Cta: React.FC<Props> = ({ tel }) => {
+export default function Cta({ tel }: Props) {
   return (<section className="flex flex-row items-center bg-white samen-border p-3 justify-center gap-2 rounded-xl">
     <FiPhone className="-scale-x-[1] scale-y-[1] fill-red-500 stroke-red-800 text-2xl" />
     <p className="text-base">دریافت قیمت لحظه ای و مشاوره خرید:</p>
@@ -16,5 +16,3 @@ const Cta: React.FC<Props> = ({ tel }) => {
     >{tel}</Link>
   </section>)
 }
-
-export default Cta
