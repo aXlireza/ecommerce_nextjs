@@ -12,7 +12,7 @@ const MenuItem: React.FC<MegamenuItem> = ({ icon, text, link, subcategories }) =
   function item(text:string, link:string, subitems:MegamenuSubItem[], arrow=true, key=0) {
     return (
       <div key={key}>
-        <Link href={link} className='hover:text-red-700 p-1 flex flex-row items-center w-48 justify-between text-black'>
+        <Link href={link} className='hover:text-red-700 p-1 flex flex-row items-center w-48 justify-between samen-text'>
 
           {/* title */}
           <div className='flex flex-row items-center gap-2'>
@@ -35,7 +35,7 @@ const MenuItem: React.FC<MegamenuItem> = ({ icon, text, link, subcategories }) =
   return (
     <div className='flex flex-row' onMouseEnter={() => toggleDropdown(true)} onMouseLeave={() => toggleDropdown(false)}>
 
-        <Link href={link} className={`${isOpen ? 'bg-slate-300 text-red-700' : 'text-black bg-slate-100'} transition flex flex-row items-center w-48 p-3 justify-between cursor-pointer`}>
+        <Link href={link} className={`${isOpen ? 'bg-slate-300 text-red-700' : 'samen-text bg-slate-100'} transition flex flex-row items-center w-48 p-3 justify-between cursor-pointer`}>
 
           {/* title and the associated icon */}
           <div className='flex flex-row items-center gap-1'>
@@ -54,7 +54,7 @@ const MenuItem: React.FC<MegamenuItem> = ({ icon, text, link, subcategories }) =
           <div className={`bg-slate-300 top-0 overflow-hidden flex flex-col absolute ${isOpen ? 'max-h-screen w-max py-2 px-4' : 'max-h-0 max-w-0'}`}>
 
             {/* The mengameny btn */}
-            <div className='flex flex-row items-center gap-2 text-black'>
+            <div className='flex flex-row items-center gap-2 samen-text'>
               <span className='min-w-fit'>قیمت {text}</span>
               <hr className='w-full'/>
             </div>

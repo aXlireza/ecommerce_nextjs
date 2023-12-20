@@ -27,7 +27,7 @@ const Carousel: React.FC<Props> = ({ title, rowOrCol, posts }) => {
             className='!pb-16'
             pagination={{
               clickable: true,
-              bulletClass: 'swiper-pagination-bullet !bg-gray-300 p-2',
+              bulletClass: 'swiper-pagination-bullet !bg-samen-gray p-2',
               bulletActiveClass: 'swiper-pagination-bullet-active !bg-samen-orange'
             }}
             breakpoints={{

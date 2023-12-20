@@ -9,7 +9,7 @@ interface TopnavProps {
 
 const Topnav: React.FC<TopnavProps> = ({ lastupdate, prices, date1, date2 }) => {
   const price = (text: string, key: number) => (
-    <span key={key} className="text-slate-900 text-md font-medium">
+    <span key={key} className="samen-text text-md font-medium">
       {text}
     </span>
   )
@@ -18,7 +18,7 @@ const Topnav: React.FC<TopnavProps> = ({ lastupdate, prices, date1, date2 }) => 
     <nav className="bg-samen-orange py-2 px-10 md:px-24 flex flex-row items-center justify-between">
 
         {/* <!-- Other side of the Nav, like Search or Profile --> */}
-        <div className="text-slate-900 text-md font-medium">
+        <div className="samen-text text-md font-medium">
           <span>{date1} - {date2}</span>
         </div>
 
@@ -28,7 +28,7 @@ const Topnav: React.FC<TopnavProps> = ({ lastupdate, prices, date1, date2 }) => 
         </div>
 
         {/* <!-- Logo or Brand Name --> */}
-        <div className="text-slate-900 text-md font-medium flex flex-row">
+        <div className="samen-text text-md font-medium flex flex-row">
           <span className='hidden md:block'>آخرین بروزرسانی سایت : </span>
           <span className='block md:hidden'>بروزرسانی : </span>
           <span>{lastupdate}</span>

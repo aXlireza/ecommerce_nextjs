@@ -16,9 +16,9 @@ const Member: React.FC<Member> = ({ imgUrl, alt, name, role, tel }) => {
         height={140}
       />
 			<div className='flex flex-col gap-1'>
-        <h5 className='text-black text-xl'>{name}</h5>
-        <h6 className='text-black text-base'>{role}</h6>
-        <Link className='flex flex-row text-black border-2 border-samen-orange rounded-lg px-2 py-1 items-center' href={`tel:+98${convertToEng(tel.slice(1).replaceAll(' ', '').replaceAll('-', ''))}`}>
+        <h5 className='samen-text text-xl'>{name}</h5>
+        <h6 className='samen-text text-base'>{role}</h6>
+        <Link className='flex flex-row samen-text border-2 border-samen-orange rounded-lg px-2 py-1 items-center' href={`tel:+98${convertToEng(tel.slice(1).replaceAll(' ', '').replaceAll('-', ''))}`}>
           <span className='text-samen-orange'>{tel}</span>
           <FiPhone className='stroke-none fill-black' />
         </Link>

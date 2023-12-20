@@ -8,7 +8,7 @@ const TableNav: React.FC<Nav> = ({ rateActive=false, title, date, rateFunc }) =>
 			{/* right part */}
 			<div className='flex flex-row items-center'>
 				<div className="z-10 bg-samen-orange w-fit h-[50px] flex items-center justify-center pr-5">
-					<p className="text-center font-semibold text-slate-700 text-sm sm:text-base">{title}</p>
+					<p className="text-center font-semibold samen-text text-sm sm:text-base">{title}</p>
 				</div>
 				{/* triangle */}
 				<span className="w-0 h-0 
@@ -20,14 +20,14 @@ const TableNav: React.FC<Nav> = ({ rateActive=false, title, date, rateFunc }) =>
 				{/* date */}
 				<article className='flex flex-row items-center gap-1 -mr-2'>
 					<FiClock className="stroke-samen-orange" />
-					<span className='text-slate-700 text-sm sm:text-base'>{date}</span>
+					<span className='samen-text text-sm sm:text-base'>{date}</span>
 				</article>
 			</div>
 
 			{/* left part */}
 			<div className='flex flex-row items-center gap-2 pl-5 cursor-pointer' onClick={rateFunc}>
 				<FiCheck className={`${rateActive ? 'bg-green-500 stroke-white' : 'border-slate-500 border-2' } transition-all rounded-md`} />
-				<span className='text-slate-700 text-sm sm:text-base'>نمایش با ارزش افزوده</span>
+				<span className='samen-text text-sm sm:text-base'>نمایش با ارزش افزوده</span>
 			</div>
     </section>
   );

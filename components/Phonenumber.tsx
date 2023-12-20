@@ -9,7 +9,7 @@ interface Props {
 
 const Phonenumber: React.FC<Props> = ({ number }) => {
 	return (
-		<Link href={`tel:+98${convertToEng(number.slice(1).replaceAll(' ', '').replaceAll('-', ''))}`} className="text-black flex flex-row items-center gap-2">
+		<Link href={`tel:+98${convertToEng(number.slice(1).replaceAll(' ', '').replaceAll('-', ''))}`} className="samen-text flex flex-row items-center gap-2">
 			<div className={'flex-col hidden xl:!flex'}>
 				<span className="font-bold text-left">مشاوره و فروش</span>
 				<span className="font-bold text-left" dir="ltr">{number}</span>

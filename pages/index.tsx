@@ -28,7 +28,7 @@ export default function Home() {
         },
       ]} />
 
-      <section className='px-10 lg:px-24 py-10 bg-gray-samen'>
+      <section className='px-10 lg:px-24 py-10 bg-samen-gray'>
         <TabbedCarousel data={[
           {
             head: {

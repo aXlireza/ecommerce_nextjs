@@ -11,7 +11,7 @@ interface Props {
 const MegamenuMobile: React.FC<Props> = ({ items }) => {
 	return (
 		<section className='h-fit'>
-			<div className='flex flex-row items-center gap-3 p-2.5 text-black'>
+			<div className='flex flex-row items-center gap-3 p-2.5 samen-text'>
 				<span className='flex'>قیمت روز محصولات</span>
 			</div>
 			<div className='bg-white'>

@@ -16,7 +16,7 @@ const AboutRow: React.FC<Props> = ({ description, videoUrl, poster }) => {
       <section className='flex flex-row flex-wrap py-8 gap-6 overflow-x-hidden w-fit'>
         <Heading color='border-white' text='درباره ثامن تجارت' underline='partial' textClasses={'text-xl'} />
         <div className='flex flex-col-reverse md:flex-row md:items-start items-center gap-5' dir='ltr'>
-          <p className='text-black' dir='rtl'>{description}</p>
+          <p className='samen-text' dir='rtl'>{description}</p>
           <video poster={poster} width="500" controls={showControls} onClick={() => setShowControls(true)}>
             <source src={videoUrl} type="video/mp4" />
           </video>

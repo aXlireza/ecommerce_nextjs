@@ -17,7 +17,7 @@ const TabHead: React.FC<Props> = ({ active, title, imgUrl, alt, onClick }) => {
       width={40}
       height={40}
     />
-    <span className='px-5 py-2 text-black'>{title}</span>
+    <span className='px-5 py-2 samen-text'>{title}</span>
     <hr className={`${active ? 'border-samen-orange border-2' : 'border-0'} w-full`} />
   </div>)
 }
