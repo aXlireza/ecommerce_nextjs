@@ -1,12 +1,15 @@
+import { convertToEng } from "@/lib/number"
 import { Product } from "@/types/Table"
 
 interface Props {
-  products: Product[]
+  products: Product[],
+  rateState: boolean,
+  rateValue: string
 }
 
 const colStyle = "font-medium text-center"
 
-const TheTable: React.FC<Props> = ({ products }) => {
+const TheTable: React.FC<Props> = ({ products, rateState, rateValue='0' }) => {
 	return (<table className="table-auto rounded-lg overflow-hidden">
     {/* table head */}
     <thead className="relative">
@@ -26,7 +29,7 @@ const TheTable: React.FC<Props> = ({ products }) => {
         <td className={colStyle}>{product.factoryName}</td>
         <td className={colStyle}>{product.size}</td>
         <td className={colStyle}>{product.standard}</td>
-        <td className={colStyle}>{product.price}</td>
+        <td className={colStyle}>{rateState ? (Number(convertToEng(product.price).replaceAll(',', ''))+Number(convertToEng(product.price).replaceAll(',', ''))*Number(convertToEng(rateValue))).toLocaleString() : product.price}</td>
       </tr>)}
     </tbody>
   </table>)

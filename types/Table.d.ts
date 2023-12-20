@@ -11,7 +11,8 @@ export interface Factory {
 export interface FactoryInfo {
   title: string,
   date: string,
-  upToDate: boolean
+  upToDate: boolean,
+  rateValue: string
 }
 export interface Product {
   title: string,

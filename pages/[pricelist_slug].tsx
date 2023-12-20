@@ -93,7 +93,8 @@ export async function getStaticProps({params}: any) {
         info: {
           title: 'میلگرد آجدار نیشابور',
           date: 'امروز ۱۱:۱۵',
-          upToDate: true
+          upToDate: true,
+          rateValue: '0.9',
         },
         products: [
           {
@@ -101,32 +102,33 @@ export async function getStaticProps({params}: any) {
             factoryName: 'نیشابور',
             size: '۱۲',
             standard: '۱۲',
-            price: '۲۲۷.۰۰۰',
+            price: '۲۲۷,۰۰۰',
           },{
             title: 'میلگرد آجدار',
             factoryName: 'نیشابور',
             size: '۱۲',
             standard: '۱۲',
-            price: '۲.۰۰۰',
+            price: '۲,۰۰۰',
           },{
             title: 'میلگرد آجدار',
             factoryName: 'نیشابور',
             size: '۱۲',
             standard: '۱۲',
-            price: '۱.۲۲۷.۰۰۰',
+            price: '۱,۲۲۷,۰۰۰',
           },{
             title: 'میلگرد آجدار',
             factoryName: 'نیشابور',
             size: '۱۲',
             standard: '۱۲',
-            price: '۲۲۷.۰۰۰',
+            price: '۲۲۷,۰۰۰',
           },
         ]
       },{
         info: {
           title: 'میلگرد آجدار نیشابور',
           date: 'به روزرسانی:‌دیروز ۱۱:۱۵',
-          upToDate: false
+          upToDate: false,
+          rateValue: '0.9',
         },
         products: [
           {
@@ -134,19 +136,19 @@ export async function getStaticProps({params}: any) {
             factoryName: 'نیشابور',
             size: '۱۲',
             standard: '۱۲',
-            price: '۲۲۷.۰۰۰',
+            price: '۲۲۷,۰۰۰',
           },{
             title: 'میلگرد آجدار',
             factoryName: 'نیشابور',
             size: '۱۲',
             standard: '۱۲',
-            price: '۲۲۷.۰۰۰',
+            price: '۲۲۷,۰۰۰',
           },{
             title: 'میلگرد آجدار',
             factoryName: 'نیشابور',
             size: '۱۲',
             standard: '۱۲',
-            price: '۲۲۷.۰۰۰',
+            price: '۲۲۷,۰۰۰',
           },
         ]
       }
