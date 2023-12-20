@@ -72,7 +72,7 @@ export default function Pricelist({ currentPage, parentPage, factories }: Props)
 
 export async function getStaticPaths() {
   return ({
-    fallback: false,
+    fallback: true,
     paths: [
       {params: {pricelist_slug: 'ajdar-milgerd'}}
     ]
