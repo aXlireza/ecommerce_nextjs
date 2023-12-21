@@ -25,7 +25,7 @@ type PageBasicInfo = {
 export default function Pricelist({ currentPage, parentPage, factories }: Props) {
 
   return (
-    <main className='flex flex-col samen-lightbg samen-gap'>
+    <main className='flex flex-col samen-lightbg'>
       <Breadcrumb items={[
         {
           title: 'خانه',
