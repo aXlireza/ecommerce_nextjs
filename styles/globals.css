@@ -88,7 +88,7 @@ body {
 
 @layer components {
 	.samen-border { @apply border-2 rounded-xl shadow-samen }
-	.samen-container-padding { @apply py-4 px-10 md:px-28 lg:px-36 xl:px-60 }
+	.samen-container-padding { @apply py-4 px-4 md:px-28 lg:px-36 xl:px-60 }
 	.samen-text { @apply text-slate-900 }
 	.samen-lightbg { @apply bg-slate-100 }
 	.samen-semilightbg { @apply bg-slate-300 }
