@@ -79,7 +79,7 @@ export default function WeightCalculator({ }: Props) {
               placeholder="۱۰" 
               min={1}
               type="number"
-              customclasses="w-20"
+              customclasses="max-w-12"
             />
             <CustomSelect fullyRounded={true}
               id="weightcalculator_quantity_type"

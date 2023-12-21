@@ -53,10 +53,10 @@ export default function Pricelist({ currentPage, parentPage, factories }: Props)
           link: '#'
         },
       ]} />
-      <section className="flex flex-row samen-container-padding samen-gap">
+      <section className="flex flex-col lg:flex-row samen-container-padding samen-gap">
 
         {/* sidebar */}
-        <section className="flex flex-col samen-gap w-4/12">
+        <section className="flex flex-col samen-gap w-full lg:w-4/12">
           <Usage pageTitle={currentPage.title} />
           <WeightCalculator />
           <AdsBanner imgUrl='https://cloud.samentejarat.com/s1.webp' alt='alt' link='#' />
