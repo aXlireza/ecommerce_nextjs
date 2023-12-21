@@ -1,15 +1,9 @@
+import { Input } from '@/types/Input'
 import React from 'react'
 
-type Props = {
-  name: string,
-  value: string,
-  id: string,
-  label: string
-}
-
-export default function CustomRadio({ name, value, label, id }: Props) {
+export default function CustomRadio({ name, value, label, id }: Input) {
 	return (<p className="flex flex-row items-center gap-1">
-    <input type="radio" name={name} value={value} id={id} />
+    <input type="radio" name={name || id} value={value} id={id} />
     <label htmlFor={id}>{label}</label>
   </p>)
 }
