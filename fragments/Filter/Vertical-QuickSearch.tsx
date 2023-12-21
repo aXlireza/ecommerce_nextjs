@@ -10,7 +10,7 @@ export default function VerticalQuickSearch({ title }: Props) {
 	return (
     <section className={`divide-y samen-border bg-white`}>
       <Heading text={`جستجوی سریع ${title}`} underline={'partial'} />
-      <form className='w-full flex flex-row gap-4 p-6 items-center'>
+      <form className='w-full flex flex-col md:flex-row gap-4 p-6 items-center'>
         {/* Factory select options */}
         <CustomSelect id={'factory_filter'} fullyRounded={true} options={[
           {
