@@ -75,18 +75,18 @@ export default function Pricelist({ currentPage, parentPage, factories }: Props)
   )
 }
 
-export async function getStaticPaths() {
-  return ({
-    fallback: false,
-    paths: [
-      {params: {pricelist_slug: 'ajdar-milgerd'}}
-    ]
-  })
-}
+// export async function getStaticPaths() {
+//   return ({
+//     fallback: false,
+//     paths: [
+//       {params: {pricelist_slug: 'ajdar-milgerd'}}
+//     ]
+//   })
+// }
 
-export async function getStaticProps({params}: any) {
+export async function getStaticProps({}: any) {
 
-  const { pricelist_slug } = params;
+  // const { pricelist_slug } = params;
 
   const props: Props = {
     currentPage: {
