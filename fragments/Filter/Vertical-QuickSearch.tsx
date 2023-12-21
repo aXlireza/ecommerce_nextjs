@@ -1,4 +1,4 @@
-import CustomSelect from '@/components/CustomSelect'
+import CustomSelect from '@/components/Form/CustomSelect'
 import Heading from '@/components/Heading'
 import React from 'react'
 
@@ -12,7 +12,7 @@ export default function VerticalQuickSearch({ title }: Props) {
       <Heading text={`جستجوی سریع ${title}`} underline={'partial'} />
       <form className='w-full flex flex-row gap-4 p-6 items-center'>
         {/* Factory select options */}
-        <CustomSelect rounded='full' options={[
+        <CustomSelect fullyRounded={true} options={[
           {
             text: 'کارخانه',
             value: '1'
@@ -26,7 +26,7 @@ export default function VerticalQuickSearch({ title }: Props) {
         ]} />
 
         {/* Size select options */}
-        <CustomSelect rounded='full' options={[
+        <CustomSelect fullyRounded={true} options={[
           {
             text: 'سایز',
             value: '1'
@@ -40,7 +40,7 @@ export default function VerticalQuickSearch({ title }: Props) {
         ]} />
 
         {/* Size select options */}
-        <CustomSelect rounded='full' options={[
+        <CustomSelect fullyRounded={true} options={[
           {
             text: 'استاندارد',
             value: '1'
@@ -54,7 +54,7 @@ export default function VerticalQuickSearch({ title }: Props) {
         ]} />
 
         {/* Product select options */}
-        <CustomSelect rounded='full' options={[
+        <CustomSelect fullyRounded={true} options={[
           {
             text: 'مورد استفاده',
             value: '1'

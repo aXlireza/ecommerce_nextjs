@@ -1,4 +1,4 @@
-import CustomSelect from '@/components/CustomSelect'
+import CustomSelect from '@/components/Form/CustomSelect'
 import Heading from '@/components/Heading'
 import React from 'react'
 

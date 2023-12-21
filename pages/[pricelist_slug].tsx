@@ -6,6 +6,7 @@ import Cta from "@/fragments/Cta"
 import PriceTables from "@/fragments/PriceTables"
 import VerticalQuickSearch from "@/fragments/Filter/Vertical-QuickSearch"
 import { Factory } from "@/types/Table"
+import Usage from "@/fragments/Filter/Usage"
 
 type Props = {
   currentPage: PageBasicInfo,
@@ -61,8 +62,9 @@ export default function Pricelist({ currentPage, parentPage, factories }: Props)
 
         {/* sidebar */}
         <section>
-    
           
+          <Usage pageTitle={currentPage.title} />
+
         </section>
 
       </section>
