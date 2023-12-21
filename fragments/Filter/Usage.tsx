@@ -4,9 +4,8 @@ import Heading from "@/components/Heading"
 
 type Props = {
   pageTitle: string,
-  usageOptions: 
 }
-export default function Usage({ pageTitle, usageOptions }: Props) {
+export default function Usage({ pageTitle }: Props) {
   return (<section className={`divide-y samen-border bg-white`}>
     <Heading text={`${pageTitle} را برای چه منظوری نیاز دارید؟`} underline={'partial'} />
     <div className="flex flex-col gap-2 p-5">
