@@ -10,6 +10,7 @@ export type Input = {
   min?: number,
   max?: number,
   customclasses?: string,
+  disabled?: boolean
 }
 
 type Select = {
