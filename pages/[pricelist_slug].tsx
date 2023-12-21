@@ -7,6 +7,8 @@ import PriceTables from "@/fragments/PriceTables"
 import VerticalQuickSearch from "@/fragments/Filter/Vertical-QuickSearch"
 import { Factory } from "@/types/Table"
 import Usage from "@/fragments/Filter/Usage"
+import WeightCalculator from "@/fragments/Filter/WeightCalculator"
+import AdsBanner from "@/components/AdsBanner"
 
 type Props = {
   currentPage: PageBasicInfo,
@@ -23,14 +25,14 @@ type PageBasicInfo = {
 export default function Pricelist({ currentPage, parentPage, factories }: Props) {
 
   return (
-    <main className='flex flex-col samen-lightbg'>
-      {/* Process the items to include the keyword "قیمت"
-      since the original format of the titles must be kept and used */}
+    <main className='flex flex-col samen-lightbg samen-gap'>
       <Breadcrumb items={[
         {
           title: 'خانه',
           link: '#',
         },
+        // {/* Process the items to include the keyword "قیمت"
+        // since the original format of the titles must be kept and used */}
         {
           ...parentPage,
           title: 'قیمت ' + parentPage.title
@@ -51,20 +53,21 @@ export default function Pricelist({ currentPage, parentPage, factories }: Props)
           link: '#'
         },
       ]} />
-      <section className="samen-container-padding">
+      <section className="flex flex-row samen-container-padding samen-gap">
+
+        {/* sidebar */}
+        <section className="flex flex-col samen-gap w-4/12">
+          <Usage pageTitle={currentPage.title} />
+          <WeightCalculator />
+          <AdsBanner imgUrl='https://cloud.samentejarat.com/s1.webp' alt='alt' link='#' />
+          <AdsBanner imgUrl='https://cloud.samentejarat.com/s1.webp' alt='alt' link='#' />
+        </section>
 
         {/* main bar */}
-        <section className="flex flex-col gap-3">
+        <section className="flex flex-col samen-gap w-full">
           <Cta tel="۰۲۱۹۱۰۰۳۱۸۱" />
           <VerticalQuickSearch title={currentPage.title} />
           <PriceTables factories={factories} />
-        </section>
-
-        {/* sidebar */}
-        <section>
-          
-          <Usage pageTitle={currentPage.title} />
-
         </section>
 
       </section>
