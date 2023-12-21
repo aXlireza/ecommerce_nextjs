@@ -11,7 +11,7 @@ export default function QuickSearch({ }: Props) {
       <form className='w-full flex flex-col gap-4 p-6 items-center'>
 
         {/* Product select options */}
-        <CustomSelect options={[
+        <CustomSelect id={'product_filter'} options={[
           {
             text: 'انتخاب کالا',
             value: '1'
@@ -25,7 +25,7 @@ export default function QuickSearch({ }: Props) {
         ]} />
 
         {/* Factory select options */}
-        <CustomSelect options={[
+        <CustomSelect id={'factory_filter'} options={[
           {
             text: 'انتخاب کارخانه',
             value: '1'
@@ -39,7 +39,7 @@ export default function QuickSearch({ }: Props) {
       ]} />
 
         {/* Size select options */}
-        <CustomSelect options={[
+        <CustomSelect id={'size_filter'} options={[
           {
             text: 'انتخاب سایز',
             value: '1'

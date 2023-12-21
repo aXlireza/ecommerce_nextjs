@@ -9,7 +9,7 @@ export default function Usage({ pageTitle }: Props) {
   return (<section className={`divide-y samen-border bg-white`}>
     <Heading text={`${pageTitle} را برای چه منظوری نیاز دارید؟`} underline={'partial'} />
     <div className="flex flex-col gap-2 p-5">
-      <CustomSelect fullyRounded={true} options={[
+      <CustomSelect id={'usage_method_filter'} fullyRounded={true} options={[
         {
           text: 'انتخاب مورد مصرف',
           value: "0"

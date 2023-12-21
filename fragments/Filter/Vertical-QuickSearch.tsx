@@ -12,7 +12,7 @@ export default function VerticalQuickSearch({ title }: Props) {
       <Heading text={`جستجوی سریع ${title}`} underline={'partial'} />
       <form className='w-full flex flex-row gap-4 p-6 items-center'>
         {/* Factory select options */}
-        <CustomSelect fullyRounded={true} options={[
+        <CustomSelect id={'factory_filter'} fullyRounded={true} options={[
           {
             text: 'کارخانه',
             value: '1'
@@ -26,7 +26,7 @@ export default function VerticalQuickSearch({ title }: Props) {
         ]} />
 
         {/* Size select options */}
-        <CustomSelect fullyRounded={true} options={[
+        <CustomSelect id={'size_filter'} fullyRounded={true} options={[
           {
             text: 'سایز',
             value: '1'
@@ -39,8 +39,8 @@ export default function VerticalQuickSearch({ title }: Props) {
           },
         ]} />
 
-        {/* Size select options */}
-        <CustomSelect fullyRounded={true} options={[
+        {/* Standard select options */}
+        <CustomSelect id={'standard_filter'} fullyRounded={true} options={[
           {
             text: 'استاندارد',
             value: '1'
@@ -53,8 +53,8 @@ export default function VerticalQuickSearch({ title }: Props) {
           },
         ]} />
 
-        {/* Product select options */}
-        <CustomSelect fullyRounded={true} options={[
+        {/* usage select options */}
+        <CustomSelect id={'usage_filter'} fullyRounded={true} options={[
           {
             text: 'مورد استفاده',
             value: '1'
