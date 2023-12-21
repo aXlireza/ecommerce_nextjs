@@ -4,11 +4,12 @@ import Topnav from '@/fragments/Topnav'
 import Footer from '@/fragments/Footer'
 import SocketBar from '@/fragments/SocketBar'
 import '@/styles/globals.css'
-import { HydrationOverlay } from '@builder.io/react-hydration-overlay'
+// import { HydrationOverlay } from '@builder.io/react-hydration-overlay'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <HydrationOverlay>
+    <section dir='rtl'>
+      {/* <HydrationOverlay> */}
       <section dir='rtl'>
         <Topnav
           lastupdate='امروز ۱۴:۲۰'
@@ -116,6 +117,7 @@ export default function App({ Component, pageProps }: AppProps) {
           ]}
         />
       </section>
-    </HydrationOverlay>
+    {/* </HydrationOverlay> */}
+    </section>
   )
 }
