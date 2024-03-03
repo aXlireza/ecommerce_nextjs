@@ -17,7 +17,7 @@ export default function TabHead({ active, title, imgUrl, alt, onClick }: Props) 
       width={40}
       height={40}
     />
-    <span className='px-5 py-2 samen-text'>{title}</span>
-    <hr className={`${active ? 'border-samen-orange border-2' : 'border-0'} w-full`} />
+    <span className='px-5 py-2 custom-text'>{title}</span>
+    <hr className={`${active ? 'border-custom-orange border-2' : 'border-0'} w-full`} />
   </div>)
 }

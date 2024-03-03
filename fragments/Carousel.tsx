@@ -27,8 +27,8 @@ export default function Carousel({ title, rowOrCol, posts }: Props) {
             className='!pb-16'
             pagination={{
               clickable: true,
-              bulletClass: 'swiper-pagination-bullet !bg-samen-gray p-2',
-              bulletActiveClass: 'swiper-pagination-bullet-active !bg-samen-orange'
+              bulletClass: 'swiper-pagination-bullet !bg-custom-gray p-2',
+              bulletActiveClass: 'swiper-pagination-bullet-active !bg-custom-orange'
             }}
             breakpoints={{
               320: {

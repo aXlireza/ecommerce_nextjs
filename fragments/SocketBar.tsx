@@ -17,7 +17,7 @@ type SocialMedia = {
 export default function SocketBar({ medias }: Props) {
   return (
     <section className="bg-white px-10 md:px-24">
-      <hr className='shadow-samen' />
+      <hr className='shadow-custom' />
       <div className='flex flex-row py-5 gap-4' dir='ltr'>
         {medias.map((media, key) => (
           <Link key={key} href={media.link}>

@@ -12,74 +12,74 @@ export default function App({ Component, pageProps }: AppProps) {
       {/* <HydrationOverlay> */}
       <section dir='rtl'>
         <Topnav
-          lastupdate='امروز ۱۴:۲۰'
+          lastupdate='Today'
           prices={['$20', '$100']}
           date1='۱۴۰۲/۰۸/۱۰'
           date2='۲۰۲۳/۱۱/۰۱'
         />
 
-        <Header logo_alt='samentejarat logo'/>
+        <Header logo_alt='logo'/>
 
         <Component {...pageProps} />
 
         <Footer
-          logo_alt='samentejarat logo'
-          tel='۰۲۱۹۱۰۰۳۱۸۱'
-          email='INFO@SAMENTEJARAT.COM'
-          workSchedule='شنبه تا چهارشنبه از ساعت ۸:۳۰ تا ساعت ۱۷ پنجشنبه ها از ساعت ۸:۳۰ تا ۱۲:۳۰'
-          address='تهران-بلوار فردوس شرق-کوی ولیعصر-کوچه ظرافتی-مجتمع ماندگار'
+          logo_alt='logo'
+          tel='09025940921'
+          email='alireza.ataee01@gmail.com'
+          workSchedule='24/7'
+          address='Address ...'
           lists={[
             {
               head: {
-                title: 'ثامن تجارت',
+                title: 'My Brand',
                 link: '#'
               },
               items: [
                 {
-                  title: 'درباره ما',
+                  title: 'about us',
                   link: '#'
                 },{
-                  title: 'درباره ما',
+                  title: 'about us',
                   link: '#'
                 },{
-                  title: 'درباره ما',
+                  title: 'about us',
                   link: '#'
                 },{
-                  title: 'درباره ما',
+                  title: 'about us',
                   link: '#'
                 },
               ]
             },{
               head: {
-                title: 'ثامن تجارت',
+                title: 'My Brand',
                 link: '#'
               },
               items: [
                 {
-                  title: 'درباره ما',
+                  title: 'about us',
                   link: '#'
                 },{
-                  title: 'درباره ما',
+                  title: 'about us',
                   link: '#'
                 },{
-                  title: 'درباره ما',
+                  title: 'about us',
                   link: '#'
                 },{
-                  title: 'درباره ما',
+                  title: 'about us',
                   link: '#'
                 },
               ]
             },{
               head: {
-                title: 'ثامن تجارت',
+                title: 'My Brand',
                 link: '#'
               },
               items: [
                 {
-                  title: 'درباره ما',
+                  title: 'about us',
                   link: '#'
                 },{
-                  title: 'درباره ما',
+                  title: 'about us',
                   link: '#'
                 }
               ]

@@ -5,12 +5,12 @@ import React from 'react'
 
 export default function Banner({ title, link, description, imgUrl, alt }: Banner_d) {
 	return (
-		<Link href={link} className='flex flex-row overflow-hidden samen-border'>
+		<Link href={link} className='flex flex-row overflow-hidden custom-border'>
       <div className='flex flex-col p-5 py-10'>
-        <h4 className='text-2xl font-bold samen-text '>{title}</h4>
-        <hr className='border-samen-orange my-2' />
-        <h5 className='text-base samen-text '>{description}</h5>
-        <button className='bg-samen-orange mt-6 px-4 p-1 rounded-lg w-fit'>اطلاعات بیشتر</button>
+        <h4 className='text-2xl font-bold custom-text '>{title}</h4>
+        <hr className='border-custom-orange my-2' />
+        <h5 className='text-base custom-text '>{description}</h5>
+        <button className='bg-custom-orange mt-6 px-4 p-1 rounded-lg w-fit'>Read More</button>
       </div>
       <div>
         <Image

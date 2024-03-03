@@ -23,8 +23,8 @@ export default function Post({ post: { title, link, imgUrl, alt, btnText }, rowO
         height={200}
       />
       <div className={`flex ${rowOrCol} gap-3`}>
-        <h4 className='samen-text text-xl'>{title}</h4>
-        <button className='text-samen-orange bg-white border-2 border-samen-orange px-5 rounded-lg w-fit'>{btnText}</button>
+        <h4 className='custom-text text-xl'>{title}</h4>
+        <button className='text-custom-orange bg-white border-2 border-custom-orange px-5 rounded-lg w-fit'>{btnText}</button>
       </div>
 		</Link>
 	)

@@ -10,10 +10,10 @@ const config: Config = {
   theme: {
     extend: {
       boxShadow: {
-        samen: '0 1px 1px -1px rgba(0, 0, 0, 0.9)'
+        custom: '0 1px 1px -1px rgba(0, 0, 0, 0.9)'
       },
       colors: {
-        samen: {
+        custom: {
           orange: '#FDB714',
           gray: '#ededed'
         }

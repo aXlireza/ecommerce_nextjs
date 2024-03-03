@@ -29,46 +29,46 @@ type PageBasicInfo = {
 export default function Pricelist({ currentPage, parentPage, factories }: Props) {
 
   return (
-    <main className='flex flex-col samen-lightbg'>
+    <main className='flex flex-col custom-lightbg'>
       <Breadcrumb items={[
         {
-          title: 'خانه',
+          title: 'Home',
           link: '#',
         },
-        // {/* Process the items to include the keyword "قیمت"
+        // {/* Process the items to include the keyword "Price"
         // since the original format of the titles must be kept and used */}
         {
           ...parentPage,
-          title: 'قیمت ' + parentPage.title
+          title: 'Price ' + parentPage.title
         },
         {
           ...currentPage,
-          title: 'قیمت ' + currentPage.title
+          title: 'Price ' + currentPage.title
         }
       ]} />
       <AdsBanners items={[
         {
-          imgUrl: 'https://cloud.samentejarat.com/s1.webp',
+          imgUrl: '/sample-banner.webp',
           alt: 'alt',
           link: '#'
         },{
-          imgUrl: 'https://cloud.samentejarat.com/s1.webp',
+          imgUrl: '/sample-banner.webp',
           alt: 'alt',
           link: '#'
         },
       ]} />
-      <section className="flex flex-col lg:flex-row samen-container-padding samen-gap">
+      <section className="flex flex-col lg:flex-row custom-container-padding custom-gap">
 
         {/* sidebar */}
-        <section className="flex flex-col samen-gap w-full lg:w-4/12">
+        <section className="flex flex-col custom-gap w-full lg:w-4/12">
           <Usage pageTitle={currentPage.title} />
           <WeightCalculator />
-          <AdsBanner imgUrl='https://cloud.samentejarat.com/s1.webp' alt='alt' link='#' />
-          <AdsBanner imgUrl='https://cloud.samentejarat.com/s1.webp' alt='alt' link='#' />
+          <AdsBanner imgUrl='/sample-banner.webp' alt='alt' link='#' />
+          <AdsBanner imgUrl='/sample-banner.webp' alt='alt' link='#' />
         </section>
 
         {/* main bar */}
-        <section className="flex flex-col samen-gap w-full">
+        <section className="flex flex-col custom-gap w-full">
           <Cta tel="۰۲۱۹۱۰۰۳۱۸۱" />
           <VerticalQuickSearch title={currentPage.title} />
           <PriceTables factories={factories} />
@@ -76,11 +76,11 @@ export default function Pricelist({ currentPage, parentPage, factories }: Props)
 
       </section>
 
-      <section className="samen-container-padding bg-white samen-gap flex flex-col">
+      <section className="custom-container-padding bg-white custom-gap flex flex-col">
         <Heading text={currentPage.title} />
-        <div className="flex flex-col md:flex-row w-full samen-gap">
+        <div className="flex flex-col md:flex-row w-full custom-gap">
           <Image
-            src='https://cloud.samentejarat.com/s1.webp'
+            src='/sample-banner.webp'
             alt='alt'
             style={{
               width: '100%',
@@ -88,49 +88,49 @@ export default function Pricelist({ currentPage, parentPage, factories }: Props)
             }}
             width={300}
             height={200}
-            className="samen-border overflow-hidden md:!w-3/4"
+            className="custom-border overflow-hidden md:!w-3/4"
           />
-          <ReadMore text="ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجثامن تجارت ثامن تجارت ثامن تجاثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت ثامن تجارت رت ارت ثامن تجارت ثامن تجارتتجارت ثامن تجارت رت ارت ثامن تجارت ثامن تجارتتجارت ثامن تجارت رت ارت ثامن تجارت ثامن تجارتتجارت ثامن تجارت رت ارت ثامن تجارت ثامن تجارتتجارت ثامن تجارت رت ارت ثامن تجارت ثامن تجارتتجارت ثامن تجارت رت ارت ثامن تجارت ثامن تجارتتجارت ثامن تجارت رت ارت ثامن تجارت ثامن تجارتتجارت ثامن تجارت رت ارت ثامن تجارت ثامن تجارتتجارت ثامن تجارت رت ارت ثامن تجارت ثامن تجارتتجارت ثامن تجارت رت ارت ثامن تجارت ثامن تجارتتجارت ثامن تجارت رت ارت ثامن تجارت ثامن تجارتتجارت ثامن تجارت رت ارت ثامن تجارت ثامن تجارتتجارت ثامن تجارت رت ارت ثامن تجارت ثامن تجارتتجارت ثامن تجارت رت ارت ثامن تجارت ثامن تجارتتجارت ثامن تجارت رت ارت ثامن تجارت ثامن تجارتتجارت ثامن تجارت رت ارت ثامن تجارت ثامن تجارتتجارت ثامن تجارت رت ارت ثامن تجارت ثامن تجارتتجارت ثامن تجارت رت ارت ثامن تجارت ثامن تجارتتجارت ثامن تجارت رت ارت ثامن تجارت ثامن تجارتتجارت ثامن تجارت رت ارت ثامن تجارت ثامن تجارتتجارت ثامن تجارت رت ارت ثامن تجارت ثامن تجارتتجارت ثامن تجارت رت ارت ثامن تجارت ثامن تجارتتجارت ثامن تجارت رت ارت ثامن تجارت ثامن تجارتتجارت ثامن تجارت رت ارت ثامن تجارت ثامن تجارتتجارت ثامن تجارت رت ارت ثامن تجارت ثامن تجارتتجارت ثامن تجارت رت ارت ثامن تجارت ثامن تجارتتجارت ثامن تجارت رت ارت ثامن تجارت ثامن تجارتتجارت ثامن تجارت رت ارت ثامن تجارت ثامن تجارتتجارت ثامن تجارت رت ارت ثامن تجارت ثامن تجارتتجارت ثامن تجارت رت ارت ثامن تجارت ثامن تجارتتجارت ثامن تجارت رت ارت ثامن تجارت ثامن تجارتتجارت ثامن تجارت رت ارت ثامن تجارت ثامن تجارتتجارت ثامن تجارت رت ارت ثامن تجارت ثامن تجارتتجارت ثامن تجارت رت ارت ثامن تجارت ثامن تجارتتجارت ثامن تجارت رت ارت ثامن تجارت ثامن تجارتتجارت ثامن تجارت رت ارت ثامن تجارت ثامن تجارتتجارت ثامن تجارت رت ارت ثامن تجارت ثامن تجارتتجارت ثامن تجارت رت ارت ثامن تجارت ثامن تجارت ." />
+          <ReadMore text="Some Long description" />
         </div>
       </section>
       
-      <section className='samen-container-padding samen-lightbg'>
-        <Carousel title={`پایگاه دانش ${currentPage.title} ثامن تجارت`} rowOrCol='flex-col' posts={[
+      <section className='custom-container-padding custom-lightbg'>
+        <Carousel title={`Blog ${currentPage.title}`} rowOrCol='flex-col' posts={[
           {
-            imgUrl: 'https://i.postimg.cc/SNdx6j0q/sa5.jpg',
+            imgUrl: '/sample-banner.webp',
             alt: 'alt2',
-            title: 'متن محصول',
-            btnText: 'آهن آلات',
+            title: 'product text',
+            btnText: 'product btn',
             link: '#'
           },{
-            imgUrl: 'https://i.postimg.cc/8zCPtDDv/sa4.jpg',
+            imgUrl: '/sample-banner.webp',
             alt: 'alt2',
-            title: 'متن محصول',
-            btnText: 'آهن آلات',
+            title: 'product text',
+            btnText: 'product btn',
             link: '#'
           },{
-            imgUrl: 'https://i.postimg.cc/PrTqvYR2/sa3.jpg',
+            imgUrl: '/sample-banner.webp',
             alt: 'alt2',
-            title: 'متن محصول',
-            btnText: 'آهن آلات',
+            title: 'product text',
+            btnText: 'product btn',
             link: '#'
           },{
-            imgUrl: 'https://i.postimg.cc/PrTqvYR2/sa3.jpg',
+            imgUrl: '/sample-banner.webp',
             alt: 'alt2',
-            title: 'متن محصول',
-            btnText: 'آهن آلات',
+            title: 'product text',
+            btnText: 'product btn',
             link: '#'
           },{
-            imgUrl: 'https://i.postimg.cc/prtLZFXV/s8.jpg',
+            imgUrl: '/sample-banner.webp',
             alt: 'alt2',
-            title: 'متن محصول',
-            btnText: 'آهن آلات',
+            title: 'product text',
+            btnText: 'product btn',
             link: '#'
           },{
-            imgUrl: 'https://i.postimg.cc/rsCFYwK1/sa1.jpg',
+            imgUrl: '/sample-banner.webp',
             alt: 'alt2',
-            title: 'متن محصول',
-            btnText: 'آهن آلات',
+            title: 'product text',
+            btnText: 'product btn',
             link: '#'
           },
         ]} />
@@ -155,45 +155,45 @@ export async function getStaticProps({}: any) {
 
   const props: Props = {
     currentPage: {
-      title: 'میلگرد آجدار',
+      title: 'some product',
       slug: 'ajdar',
       link: '/milgerd/ajdar'
     },
     parentPage: {
-      title: 'میلگرد',
+      title: 'some product',
       slug: 'milgerd',
       link: '/milgerd'
     },
     factories: [
       {
         info: {
-          title: 'میلگرد آجدار نیشابور',
-          date: 'امروز ۱۱:۱۵',
+          title: 'product text',
+          date: 'Today',
           upToDate: true,
           rateValue: '0.09',
         },
         products: [
           {
-            title: 'میلگرد آجدار',
-            factoryName: 'نیشابور',
+            title: 'some product',
+            factoryName: 'some factory',
             size: '۱۲',
             standard: '۱۲',
             price: '۲۲۷,۰۰۰',
           },{
-            title: 'میلگرد آجدار',
-            factoryName: 'نیشابور',
+            title: 'some product',
+            factoryName: 'some factory',
             size: '۱۲',
             standard: '۱۲',
             price: '۲,۰۰۰',
           },{
-            title: 'میلگرد آجدار',
-            factoryName: 'نیشابور',
+            title: 'some product',
+            factoryName: 'some factory',
             size: '۱۲',
             standard: '۱۲',
             price: '۱,۲۲۷,۰۰۰',
           },{
-            title: 'میلگرد آجدار',
-            factoryName: 'نیشابور',
+            title: 'some product',
+            factoryName: 'some factory',
             size: '۱۲',
             standard: '۱۲',
             price: '۲۲۷,۰۰۰',
@@ -201,27 +201,27 @@ export async function getStaticProps({}: any) {
         ]
       },{
         info: {
-          title: 'میلگرد آجدار نیشابور',
-          date: 'به روزرسانی:‌دیروز ۱۱:۱۵',
+          title: 'product text',
+          date: 'yesterday',
           upToDate: false,
           rateValue: '0.09',
         },
         products: [
           {
-            title: 'میلگرد آجدار',
-            factoryName: 'نیشابور',
+            title: 'some product',
+            factoryName: 'some factory',
+            size: '12',
+            standard: '12',
+            price: '۲۲۷,۰۰۰',
+          },{
+            title: 'some product',
+            factoryName: 'some factory',
             size: '۱۲',
             standard: '۱۲',
             price: '۲۲۷,۰۰۰',
           },{
-            title: 'میلگرد آجدار',
-            factoryName: 'نیشابور',
-            size: '۱۲',
-            standard: '۱۲',
-            price: '۲۲۷,۰۰۰',
-          },{
-            title: 'میلگرد آجدار',
-            factoryName: 'نیشابور',
+            title: 'some product',
+            factoryName: 'some factory',
             size: '۱۲',
             standard: '۱۲',
             price: '۲۲۷,۰۰۰',

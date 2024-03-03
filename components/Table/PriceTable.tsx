@@ -18,7 +18,7 @@ export default function PriceTable({ nav, products }: Props) {
             <TableNav {...nav} rateFunc={() => setRateActive(prevState => !prevState)} rateActive={rateActive}  />
             <TheTable products={products} rateState={rateActive} rateValue={nav.rateValue} />
         </div>
-        <Toolsbar bgcolor={products.length%2 ? 'samen-gray' : 'white'} />
+        <Toolsbar bgcolor={products.length%2 ? 'custom-gray' : 'white'} />
     </section>
 	)
 }

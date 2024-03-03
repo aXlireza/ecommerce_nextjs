@@ -4,32 +4,7 @@ const {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  output: 'export',
-  
-  images: {
-    unoptimized: true,
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'cloud.samentejarat.com',
-        port: '',
-        pathname: '/**',
-      },{
-        protocol: 'https',
-        hostname: 'samentejarat.com',
-        port: '',
-        pathname: '/**',
-      },
-    ],
-  },
+  // reactStrictMode: true,
+  // output: 'export',
 }
-// module.exports = withHydrationOverlay({
-//   /**
-//    * Optional: `appRootSelector` is the selector for the root element of your app. By default, it is `#__next` which works
-//    * for Next.js apps with pages directory. If you are using the app directory, you should change this to `main`.
-//    */
-//   appRootSelector: "main",
-// })(nextConfig);
-
 module.exports = nextConfig

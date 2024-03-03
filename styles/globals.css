@@ -87,11 +87,11 @@ body {
 }
 
 @layer components {
-	.samen-border { @apply border-2 rounded-xl shadow-samen }
-	.samen-container-padding { @apply py-4 px-4 md:px-28 lg:px-36 xl:px-60 }
-	.samen-text { @apply text-slate-900 }
-	.samen-lightbg { @apply bg-slate-100 }
-	.samen-semilightbg { @apply bg-slate-300 }
-	.samen-darkbg { @apply bg-slate-900 }
-	.samen-gap { @apply gap-4 }
+	.custom-border { @apply border-2 rounded-xl shadow-custom }
+	.custom-container-padding { @apply py-4 px-4 md:px-28 lg:px-36 xl:px-60 }
+	.custom-text { @apply text-slate-900 }
+	.custom-lightbg { @apply bg-slate-100 }
+	.custom-semilightbg { @apply bg-slate-300 }
+	.custom-darkbg { @apply bg-slate-900 }
+	.custom-gap { @apply gap-4 }
 }

@@ -12,7 +12,7 @@ export default function MenuItem({ icon, text, link, subcategories }: MegamenuIt
   function item(text:string, link:string, subitems:MegamenuSubItem[], arrow=true, key=0) {
     return (
       <div key={key}>
-        <Link href={link} className='hover:text-red-700 p-1 flex flex-row items-center w-48 justify-between samen-text'>
+        <Link href={link} className='hover:text-red-700 p-1 flex flex-row items-center w-48 justify-between custom-text'>
 
           {/* title */}
           <div className='flex flex-row items-center gap-2'>
@@ -35,7 +35,7 @@ export default function MenuItem({ icon, text, link, subcategories }: MegamenuIt
   return (
     <div className='flex flex-row' onMouseEnter={() => toggleDropdown(true)} onMouseLeave={() => toggleDropdown(false)}>
 
-        <Link href={link} className={`${isOpen ? 'samen-semilightbg text-red-700' : 'samen-text samen-lightbg'} transition flex flex-row items-center w-48 p-3 justify-between cursor-pointer`}>
+        <Link href={link} className={`${isOpen ? 'custom-semilightbg text-red-700' : 'custom-text custom-lightbg'} transition flex flex-row items-center w-48 p-3 justify-between cursor-pointer`}>
 
           {/* title and the associated icon */}
           <div className='flex flex-row items-center gap-1'>
@@ -51,11 +51,11 @@ export default function MenuItem({ icon, text, link, subcategories }: MegamenuIt
 
         {/* the secondary flyout menu that appear as a primary column item is hovered */}
         <div className='max-w-0 max-h-0'>
-          <div className={`samen-semilightbg top-0 overflow-hidden flex flex-col absolute ${isOpen ? 'max-h-screen w-max py-2 px-4' : 'max-h-0 max-w-0'}`}>
+          <div className={`custom-semilightbg top-0 overflow-hidden flex flex-col absolute ${isOpen ? 'max-h-screen w-max py-2 px-4' : 'max-h-0 max-w-0'}`}>
 
             {/* The mengameny btn */}
-            <div className='flex flex-row items-center gap-2 samen-text'>
-              <span className='min-w-fit'>قیمت {text}</span>
+            <div className='flex flex-row items-center gap-2 custom-text'>
+              <span className='min-w-fit'>price {text}</span>
               <hr className='w-full'/>
             </div>
 

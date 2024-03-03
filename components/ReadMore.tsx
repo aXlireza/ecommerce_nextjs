@@ -16,9 +16,9 @@ export default function ReadMore({ text }: Props) {
       <p className={`transition-all overflow-hidden ${isExpanded ? 'max-h-fit' : `max-h-10`}`}>{text}</p>
       <button
         onClick={toggleExpansion}
-        className="w-fit samen-border border-samen-orange p-1 px-4 text-samen-orange"
+        className="w-fit custom-border border-custom-orange p-1 px-4 text-custom-orange"
       >
-        {isExpanded ? 'نمایش کمتر' : 'نمایش بیشتر'}
+        {isExpanded ? 'Less' : 'More'}
       </button>
     </div>
   );

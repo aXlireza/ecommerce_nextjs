@@ -10,139 +10,139 @@ import Carousel from '@/fragments/Carousel'
 
 export default function Home() {
   return (
-    <main className='flex flex-col samen-lightbg'>
+    <main className='flex flex-col custom-lightbg'>
       
       <Hero slides={[
         {
-          imgUrl: 'https://i.postimg.cc/MKjMFWxC/SAMEN1.jpg',
+          imgUrl: '/sample-banner.webp',
           alt: 'alt',
           link: '#',
         },{
-          imgUrl: 'https://i.postimg.cc/MKjMFWxC/SAMEN1.jpg',
+          imgUrl: '/sample-banner.webp',
           alt: 'alt',
           link: '#',
         },{
-          imgUrl: 'https://i.postimg.cc/MKjMFWxC/SAMEN1.jpg',
+          imgUrl: '/sample-banner.webp',
           alt: 'alt',
           link: '#',
         },
       ]} />
 
-      <section className='samen-container-padding bg-samen-gray'>
+      <section className='custom-container-padding bg-custom-gray'>
         <TabbedCarousel data={[
           {
             head: {
-              title: 'میلگرد',
-              imgUrl: 'https://cloud.samentejarat.com/icon1.png',
+              title: 'some product',
+              imgUrl: '/sample-banner.webp',
               alt: 'alt'
             },
             body: [
               {
-                imgUrl: 'https://i.postimg.cc/zGkw2Kgc/2.webp',
+                imgUrl: '/sample-banner.webp',
                 alt: 'alt2',
-                title: 'متن محصول',
+                title: 'product text',
                 date: '۱۴۰۲/۰۸/۱۰',
                 link: '#'
               },{
-                imgUrl: 'https://i.postimg.cc/SKCntp3N/2.webp',
+                imgUrl: '/sample-banner.webp',
                 alt: 'alt2',
-                title: 'متن محصول',
+                title: 'product text',
                 date: '۱۴۰۲/۰۸/۱۰',
                 link: '#'
               },{
-                imgUrl: 'https://i.postimg.cc/43sGskn3/2.webp',
+                imgUrl: '/sample-banner.webp',
                 alt: 'alt2',
-                title: 'متن محصول',
+                title: 'product text',
                 date: '۱۴۰۲/۰۸/۱۰',
                 link: '#'
               },{
-                imgUrl: 'https://i.postimg.cc/9QVXFqnV/2.webp',
+                imgUrl: '/sample-banner.webp',
                 alt: 'alt2',
-                title: 'متن محصول',
+                title: 'product text',
                 date: '۱۴۰۲/۰۸/۱۰',
                 link: '#'
               },{
-                imgUrl: 'https://i.postimg.cc/zGkw2Kgc/2.webp',
+                imgUrl: '/sample-banner.webp',
                 alt: 'alt2',
-                title: 'متن محصول',
+                title: 'product text',
                 date: '۱۴۰۲/۰۸/۱۰',
                 link: '#'
               },{
-                imgUrl: 'https://i.postimg.cc/SKCntp3N/2.webp',
+                imgUrl: '/sample-banner.webp',
                 alt: 'alt2',
-                title: 'متن محصول',
+                title: 'product text',
                 date: '۱۴۰۲/۰۸/۱۰',
                 link: '#'
               },{
-                imgUrl: 'https://i.postimg.cc/9QVXFqnV/2.webp',
+                imgUrl: '/sample-banner.webp',
                 alt: 'alt2',
-                title: 'متن محصول',
+                title: 'product text',
                 date: '۱۴۰۲/۰۸/۱۰',
                 link: '#'
               },{
-                imgUrl: 'https://i.postimg.cc/zGkw2Kgc/2.webp',
+                imgUrl: '/sample-banner.webp',
                 alt: 'alt2',
-                title: 'متن محصول',
+                title: 'product text',
                 date: '۱۴۰۲/۰۸/۱۰',
                 link: '#'
               },
             ]
           },{
             head: {
-              title: 'میلگرد',
-              imgUrl: 'https://cloud.samentejarat.com/icon1.png',
+              title: 'some product',
+              imgUrl: '/sample-banner.webp',
               alt: 'alt'
             },
             body: [
               {
-                imgUrl: 'https://cloud.samentejarat.com/What is 430 steel sheet.webp',
+                imgUrl: '/sample-banner.webp',
                 alt: 'alt2',
-                title: 'متن محصول2',
+                title: 'product text2',
                 date: '۱۴۰۲/۰۸/۱۰',
                 link: '#'
               },{
-                imgUrl: 'https://cloud.samentejarat.com/What is 430 steel sheet.webp',
+                imgUrl: '/sample-banner.webp',
                 alt: 'alt2',
-                title: 'متن محصول2',
+                title: 'product text2',
                 date: '۱۴۰۲/۰۸/۱۰',
                 link: '#'
               },
             ]
           },{
             head: {
-              title: 'میلگرد',
-              imgUrl: 'https://cloud.samentejarat.com/icon1.png',
+              title: 'some product',
+              imgUrl: '/sample-banner.webp',
               alt: 'alt'
             },
             body: [
               {
-                imgUrl: 'https://cloud.samentejarat.com/What is 430 steel sheet.webp',
+                imgUrl: '/sample-banner.webp',
                 alt: 'alt2',
-                title: 'متن محصول3',
+                title: 'product text3',
                 date: '۱۴۰۲/۰۸/۱۰',
                 link: '#'
               },{
-                imgUrl: 'https://cloud.samentejarat.com/What is 430 steel sheet.webp',
+                imgUrl: '/sample-banner.webp',
                 alt: 'alt2',
-                title: 'متن محصول3',
+                title: 'product text3',
                 date: '۱۴۰۲/۰۸/۱۰',
                 link: '#'
               },{
-                imgUrl: 'https://cloud.samentejarat.com/What is 430 steel sheet.webp',
+                imgUrl: '/sample-banner.webp',
                 alt: 'alt2',
-                title: 'متن محصول3',
+                title: 'product text3',
                 date: '۱۴۰۲/۰۸/۱۰',
                 link: '#'
               },{
-                imgUrl: 'https://cloud.samentejarat.com/What is 430 steel sheet.webp',
+                imgUrl: '/sample-banner.webp',
                 alt: 'alt2',
-                title: 'متن محصول3',
+                title: 'product text3',
                 date: '۱۴۰۲/۰۸/۱۰',
                 link: '#'
               },{
-                imgUrl: 'https://cloud.samentejarat.com/What is 430 steel sheet.webp',
+                imgUrl: '/sample-banner.webp',
                 alt: 'alt2',
-                title: 'متن محصول3',
+                title: 'product text3',
                 date: '۱۴۰۲/۰۸/۱۰',
                 link: '#'
               },
@@ -153,31 +153,31 @@ export default function Home() {
 
       <Brands brands={[
         {
-          imgUrl: 'https://cloud.samentejarat.com/samen2 (1).webp',
+          imgUrl: '/sample-banner.webp',
           alt: 'alt',
           link: '#'
         },{
-          imgUrl: 'https://cloud.samentejarat.com/samen2 (1).webp',
+          imgUrl: '/sample-banner.webp',
           alt: 'alt',
           link: '#'
         },{
-          imgUrl: 'https://cloud.samentejarat.com/samen2 (1).webp',
+          imgUrl: '/sample-banner.webp',
           alt: 'alt',
           link: '#'
         },{
-          imgUrl: 'https://cloud.samentejarat.com/samen2 (1).webp',
+          imgUrl: '/sample-banner.webp',
           alt: 'alt',
           link: '#'
         },{
-          imgUrl: 'https://cloud.samentejarat.com/samen2 (1).webp',
+          imgUrl: '/sample-banner.webp',
           alt: 'alt',
           link: '#'
         },{
-          imgUrl: 'https://cloud.samentejarat.com/samen2 (1).webp',
+          imgUrl: '/sample-banner.webp',
           alt: 'alt',
           link: '#'
         },{
-          imgUrl: 'https://cloud.samentejarat.com/samen2 (1).webp',
+          imgUrl: '/sample-banner.webp',
           alt: 'alt',
           link: '#'
         }
@@ -185,139 +185,139 @@ export default function Home() {
 
       <Banners banners={[
         {
-          title: 'انواع فولاد های آلیاژ',
-          description: 'تضمین صد در صدی قیمت و کیفیت',
-          imgUrl: 'https://i.postimg.cc/hXBnM4CN/s4.jpg',
+          title: 'some product title',
+          description: 'Price',
+          imgUrl: '/sample-banner.webp',
           alt: 'alt',
           link: '#'
         },{
-          title: 'انواع فولاد های آلیاژ',
-          description: 'تضمین صد در صدی قیمت و کیفیت',
-          imgUrl: 'https://i.postimg.cc/fVfNP4py/s5.jpg',
+          title: 'some product title',
+          description: 'Price',
+          imgUrl: '/sample-banner.webp',
           alt: 'alt',
           link: '#'
         }
       ]} />
 
-      <AboutRow videoUrl='https://samentejarat.com/img/samen.mp4' poster={'https://samentejarat.com/img/2022-09-19_13-53-55.png'} description='مجموعه بازرگاني ثامن تجارت از سال 1393 فعاليت خود را در زمينه خريد و فروش و تامين جامع انواع آهن آلات ساختمانی و صنعتی و همچنین انواع تفلون و پلیمر آغاز کرد و در راستای سرعت بخشیدن و شفافیت و همچنین امر اطلاع رسانی و ارائه بهتر خدمات در سال 1397 اقدام به راه اندازي سايت www.samentejarat.com نمود. شما می توانید قیمت انواع محصولات که به صورت روزانه برای شما بارگذاری می شود را مشاهده کنید و جهت دریافت مشاوره برای خرید بهتر با کارشناسان ثامن تجارت تماس حاصل فرمایید. ما میخواهیم در پی همکاری متقابل و صادقانه، ضمن کسب سودآوری برای مجموعه ثامن تجارت برای مشتریان گرامی این مجموعه نیز سود و منفعت حاصل کنیم.' />
+      <AboutRow videoUrl='https://example.com/img/custom.mp4' poster={'/sample-banner.webp'} description='some long descriptions' />
 
       <TeamMembers teams={[
         {
-          title: 'هیئت مدیره',
+          title: 'some role',
           members: [
             {
-              imgUrl: 'https://cloud.samentejarat.com/245*165-_image1660721464.webp?w=384&q=75 1x, https://cloud.samentejarat.com/245*165-_image1660721464.webp',
+              imgUrl: '/sample-banner.webp',
               alt: 'alt',
-              name: 'عباس اشرف',
-              role: 'مدیرعامل',
-              tel: '۰۹۱۲۱۲۳۱۴۱۵',
+              name: 'some team member',
+              role: 'role',
+              tel: '09025940921',
             },{
-              imgUrl: 'https://cloud.samentejarat.com/245*165-_image1660721464.webp?w=384&q=75 1x, https://cloud.samentejarat.com/245*165-_image1660721464.webp',
+              imgUrl: '/sample-banner.webp',
               alt: 'alt',
-              name: 'عباس اشرف',
-              role: 'مدیرعامل',
-              tel: '۰۹۱۲۱۲۳۱۴۱۵',
+              name: 'some team member',
+              role: 'role',
+              tel: '09025940921',
             },{
-              imgUrl: 'https://cloud.samentejarat.com/245*165-_image1660721464.webp?w=384&q=75 1x, https://cloud.samentejarat.com/245*165-_image1660721464.webp',
+              imgUrl: '/sample-banner.webp',
               alt: 'alt',
-              name: 'عباس اشرف',
-              role: 'مدیرعامل',
-              tel: '۰۹۱۲۱۲۳۱۴۱۵',
+              name: 'some team member',
+              role: 'role',
+              tel: '09025940921',
             }
           ]
         },{
-          title: 'هیئت مدیره',
+          title: 'some role',
           members: [
             {
-              imgUrl: 'https://cloud.samentejarat.com/245*165-_image1660721464.webp?w=384&q=75 1x, https://cloud.samentejarat.com/245*165-_image1660721464.webp',
+              imgUrl: '/sample-banner.webp',
               alt: 'alt',
-              name: 'عباس اشرف',
-              role: 'مدیرعامل',
-              tel: '۰۹۱۲۱۲۳۱۴۱۵',
+              name: 'some team member',
+              role: 'role',
+              tel: '09025940921',
             }
           ]
         },
       ]} />
 
-      <section className='samen-container-padding samen-lightbg'>
-        <Carousel title='پایگاه دانش ثامن تجارت' rowOrCol='flex-col' posts={[
+      <section className='custom-container-padding custom-lightbg'>
+        <Carousel title='Blog Posts' rowOrCol='flex-col' posts={[
           {
-            imgUrl: 'https://i.postimg.cc/SNdx6j0q/sa5.jpg',
+            imgUrl: '/sample-banner.webp',
             alt: 'alt2',
-            title: 'متن محصول',
-            btnText: 'آهن آلات',
+            title: 'product text',
+            btnText: 'product btn',
             link: '#'
           },{
-            imgUrl: 'https://i.postimg.cc/8zCPtDDv/sa4.jpg',
+            imgUrl: '/sample-banner.webp',
             alt: 'alt2',
-            title: 'متن محصول',
-            btnText: 'آهن آلات',
+            title: 'product text',
+            btnText: 'product btn',
             link: '#'
           },{
-            imgUrl: 'https://i.postimg.cc/PrTqvYR2/sa3.jpg',
+            imgUrl: '/sample-banner.webp',
             alt: 'alt2',
-            title: 'متن محصول',
-            btnText: 'آهن آلات',
+            title: 'product text',
+            btnText: 'product btn',
             link: '#'
           },{
-            imgUrl: 'https://i.postimg.cc/PrTqvYR2/sa3.jpg',
+            imgUrl: '/sample-banner.webp',
             alt: 'alt2',
-            title: 'متن محصول',
-            btnText: 'آهن آلات',
+            title: 'product text',
+            btnText: 'product btn',
             link: '#'
           },{
-            imgUrl: 'https://i.postimg.cc/prtLZFXV/s8.jpg',
+            imgUrl: '/sample-banner.webp',
             alt: 'alt2',
-            title: 'متن محصول',
-            btnText: 'آهن آلات',
+            title: 'product text',
+            btnText: 'product btn',
             link: '#'
           },{
-            imgUrl: 'https://i.postimg.cc/rsCFYwK1/sa1.jpg',
+            imgUrl: '/sample-banner.webp',
             alt: 'alt2',
-            title: 'متن محصول',
-            btnText: 'آهن آلات',
+            title: 'product text',
+            btnText: 'product btn',
             link: '#'
           },
         ]} />
       </section>
 
-      <section className='samen-container-padding bg-white'>
-        <Carousel title='فرصت های همکاری' rowOrCol='flex-row justify-between mt-2' posts={[
+      <section className='custom-container-padding bg-white'>
+        <Carousel title='partnership' rowOrCol='flex-row justify-between mt-2' posts={[
           {
-            imgUrl: 'https://i.postimg.cc/prtLZFXV/s8.jpg',
+            imgUrl: '/sample-banner.webp',
             alt: 'alt2',
-            title: 'متن محصول',
-            btnText: 'آهن آلات',
+            title: 'product text',
+            btnText: 'product btn',
             link: '#'
           },{
-            imgUrl: 'https://i.postimg.cc/rsCFYwK1/sa1.jpg',
+            imgUrl: '/sample-banner.webp',
             alt: 'alt2',
-            title: 'متن محصول',
-            btnText: 'آهن آلات',
+            title: 'product text',
+            btnText: 'product btn',
             link: '#'
           },{
-            imgUrl: 'https://i.postimg.cc/QNptM00F/sa2.jpg',
+            imgUrl: '/sample-banner.webp',
             alt: 'alt2',
-            title: 'متن محصول',
-            btnText: 'آهن آلات',
+            title: 'product text',
+            btnText: 'product btn',
             link: '#'
           },{
-            imgUrl: 'https://i.postimg.cc/PrTqvYR2/sa3.jpg',
+            imgUrl: '/sample-banner.webp',
             alt: 'alt2',
-            title: 'متن محصول',
-            btnText: 'آهن آلات',
+            title: 'product text',
+            btnText: 'product btn',
             link: '#'
           },{
-            imgUrl: 'https://i.postimg.cc/8zCPtDDv/sa4.jpg',
+            imgUrl: '/sample-banner.webp',
             alt: 'alt2',
-            title: 'متن محصول',
-            btnText: 'آهن آلات',
+            title: 'product text',
+            btnText: 'product btn',
             link: '#'
           },{
-            imgUrl: 'https://i.postimg.cc/SNdx6j0q/sa5.jpg',
+            imgUrl: '/sample-banner.webp',
             alt: 'alt2',
-            title: 'متن محصول',
-            btnText: 'آهن آلات',
+            title: 'product text',
+            btnText: 'product btn',
             link: '#'
           },
         ]} />

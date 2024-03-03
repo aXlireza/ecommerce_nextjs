@@ -12,8 +12,8 @@ export default function TeamMembers({ teams }: Props) {
   const [activeTab, setActiveTab] = useState(0)
 
 	return (
-		<section className='samen-container-padding bg-white'>
-      <div className='bg-white samen-border divide-y'>
+		<section className='custom-container-padding bg-white'>
+      <div className='bg-white custom-border divide-y'>
         <div className='flex flex-row gap-3 justify-center'>
           {teams.map(item => item.title).map((title, key) => <Heading key={key} underline={key == activeTab ? 'full' : undefined} text={title} customClasses='cursor-pointer' onClick={() => setActiveTab(key)} textClasses='' />)}
         </div>

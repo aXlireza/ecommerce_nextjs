@@ -9,16 +9,16 @@ type Props = {
 
 export default function Topnav({ lastupdate, prices, date1, date2 }: Props) {
   const price = (text: string, key: number) => (
-    <span key={key} className="samen-text text-md font-medium">
+    <span key={key} className="custom-text text-md font-medium">
       {text}
     </span>
   )
 
   return (
-    <nav className="bg-samen-orange py-2 px-10 md:px-24 flex flex-row items-center justify-between">
+    <nav className="bg-custom-orange py-2 px-10 md:px-24 flex flex-row items-center justify-between">
 
         {/* <!-- Other side of the Nav, like Search or Profile --> */}
-        <div className="samen-text text-md font-medium">
+        <div className="custom-text text-md font-medium">
           <span>{date1} - {date2}</span>
         </div>
 
@@ -28,9 +28,9 @@ export default function Topnav({ lastupdate, prices, date1, date2 }: Props) {
         </div>
 
         {/* <!-- Logo or Brand Name --> */}
-        <div className="samen-text text-md font-medium flex flex-row">
-          <span className='hidden md:block'>آخرین بروزرسانی سایت : </span>
-          <span className='block md:hidden'>بروزرسانی : </span>
+        <div className="custom-text text-md font-medium flex flex-row">
+          <span className='hidden md:block'>Latest Update : </span>
+          <span className='block md:hidden'>Update : </span>
           <span>{lastupdate}</span>
         </div>
 

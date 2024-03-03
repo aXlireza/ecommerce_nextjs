@@ -10,20 +10,20 @@ type Props = {
 const colStyle = "font-medium text-center"
 
 export default function TheTable({ products, rateState, rateValue='0' }: Props) {
-	return (<table className="table-auto overflow-hidden samen-border">
+	return (<table className="table-auto overflow-hidden custom-border">
     {/* table head */}
     <thead className="relative">
       <tr className="h-12 relative bg-[#ffd579]">
-        <th className={colStyle}>کالا</th>
-        <th className={colStyle}>کارخانه</th>
-        <th className={colStyle}>سایز</th>
-        <th className={colStyle}>استاندارد</th>
-        <th className={colStyle}>قیمت</th>
+        <th className={colStyle}>Good</th>
+        <th className={colStyle}>Factory</th>
+        <th className={colStyle}>Size</th>
+        <th className={colStyle}>Standard</th>
+        <th className={colStyle}>Price</th>
       </tr>
     </thead>
     {/* table body */}
     <tbody>
-      {products.map((product, key) => <tr className={`odd:bg-samen-gray even:bg-white py-2 h-12`} key={key}>
+      {products.map((product, key) => <tr className={`odd:bg-custom-gray even:bg-white py-2 h-12`} key={key}>
         <td className={colStyle}>{product.title}</td>
         <td className={colStyle}>{product.factoryName}</td>
         <td className={colStyle}>{product.size}</td>

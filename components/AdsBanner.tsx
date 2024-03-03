@@ -12,6 +12,6 @@ export default function AdsBanner({ imgUrl, alt, link }: AdsBanner) {
     }}
     width={400}
     height={200}
-    className="samen-border overflow-hidden"
+    className="custom-border overflow-hidden"
   /></Link>
 }

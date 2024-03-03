@@ -18,117 +18,117 @@ export default function Header({ logo_alt }: Props) {
 
   const [headerItems, setheaderItems] = useState([
     {
-      text: 'تولید کنندگان',
+      text: 'Producers',
       link: '#',
     },{
-      text: 'تولید کنندگان',
+      text: 'Producers',
       link: '#',
     },{
-      text: 'تولید کنندگان',
+      text: 'Producers',
       link: '#',
     },{
-      text: 'تولید کنندگان',
+      text: 'Producers',
       link: '#',
     },
   ])
 
   const [memegamenuItems, setMegamenuItems] = useState([
     {
-      text: 'میلگرد',
+      text: 'Product 1',
       link: '#',
       icon: 'sth',
       subcategories: [
         {
-          text: 'میلگرد آجدار',
+          text: 'some product',
           link: '#',
           arrow: true,
           subitems: []
         },{
-          text: 'سایز های منتخب',
+          text: 'Sizes',
           link: '#',
           arrow: true,
           subitems: [
             {
-              text: 'میلگرد 8',
+              text: 'Some Product',
               link: '#',
               arrow: false,
               subitems: []
             }
           ]
         },{
-          text: 'سایز های منتخب',
+          text: 'Sizes',
           link: '#',
           arrow: true,
           subitems: [
             {
-              text: 'میلگرد 8',
+              text: 'Some Product',
               link: '#',
               arrow: false,
               subitems: []
             },{
-              text: 'میلگرد 8',
+              text: 'Some Product',
               link: '#',
               arrow: false,
               subitems: []
             }
           ]
         },{
-          text: 'سایز های منتخب',
+          text: 'Sizes',
           link: '#',
           arrow: true,
           subitems: [
             {
-              text: 'میلگرد 8',
+              text: 'Some Product',
               link: '#',
               arrow: false,
               subitems: []
             },{
-              text: 'میلگرد 8',
+              text: 'Some Product',
               link: '#',
               arrow: false,
               subitems: []
             },{
-              text: 'میلگرد 8',
+              text: 'Some Product',
               link: '#',
               arrow: false,
               subitems: []
             },{
-              text: 'میلگرد 8',
+              text: 'Some Product',
               link: '#',
               arrow: false,
               subitems: []
             },{
-              text: 'میلگرد 8',
+              text: 'Some Product',
               link: '#',
               arrow: false,
               subitems: []
             },{
-              text: 'میلگرد 8',
+              text: 'Some Product',
               link: '#',
               arrow: false,
               subitems: []
             },{
-              text: 'میلگرد 8',
+              text: 'Some Product',
               link: '#',
               arrow: false,
               subitems: []
             },{
-              text: 'میلگرد 8',
+              text: 'Some Product',
               link: '#',
               arrow: false,
               subitems: []
             },{
-              text: 'میلگرد 8',
+              text: 'Some Product',
               link: '#',
               arrow: false,
               subitems: []
             },{
-              text: 'میلگرد 8',
+              text: 'Some Product',
               link: '#',
               arrow: false,
               subitems: []
             },{
-              text: 'میلگرد 8',
+              text: 'Some Product',
               link: '#',
               arrow: false,
               subitems: []
@@ -137,44 +137,44 @@ export default function Header({ logo_alt }: Props) {
         }
       ],
     },{
-      text: 'میلگرد',
+      text: 'Product 1',
       link: '#',
       icon: 'sth',
       subcategories: [
         {
-          text: 'سایز های منتخب',
+          text: 'Sizes',
           link: '#',
           arrow: true,
           subitems: [
             {
-              text: 'میلگرد 8',
+              text: 'Some Product',
               link: '#',
               arrow: false,
               subitems: []
             }
           ]
         },{
-          text: 'سایز های منتخب',
+          text: 'Sizes',
           link: '#',
           arrow: true,
           subitems: [
             {
-              text: 'میلگرد 8',
+              text: 'Some Product',
               link: '#',
               arrow: false,
               subitems: []
             },{
-              text: 'میلگرد 8',
+              text: 'Some Product',
               link: '#',
               arrow: false,
               subitems: []
             },{
-              text: 'میلگرد 8',
+              text: 'Some Product',
               link: '#',
               arrow: false,
               subitems: []
             },{
-              text: 'میلگرد 8',
+              text: 'Some Product',
               link: '#',
               arrow: false,
               subitems: []
@@ -192,10 +192,10 @@ export default function Header({ logo_alt }: Props) {
   }
   
   return (
-    <header className="sticky top-0 z-20 flex flex-row justify-between items-center shadow-samen py-3 px-10 md:px-24 bg-white">
+    <header className="sticky top-0 z-20 flex flex-row justify-between items-center shadow-custom py-3 px-10 md:px-24 bg-white">
 
       {/* the menu button for mobile */}
-      <div className='lg:hidden samen-text' onClick={updateMenuState}>
+      <div className='lg:hidden custom-text' onClick={updateMenuState}>
         <FiMenu className='text-4xl' />
       </div>
 
@@ -204,7 +204,7 @@ export default function Header({ logo_alt }: Props) {
         {/* logo */}
         <Link href={'/'}>
           <Image
-            src={'https://cloud.samentejarat.com/samen2 (1).webp'}
+            src={'/sample-banner.webp'}
             alt={logo_alt}
             width={160}
             height={20}
@@ -226,7 +226,7 @@ export default function Header({ logo_alt }: Props) {
             <MegamenuMobile items={memegamenuItems} />
             {headerItems.map(({text, link}, key) => <HeaderItems key={key} text={text} link={link}/>)}
           </div>
-          <div className='w-5/12 h-screen samen-darkbg opacity-70' onClick={updateMenuState}></div>
+          <div className='w-5/12 h-screen custom-darkbg opacity-70' onClick={updateMenuState}></div>
         </div>
       </div>
 

@@ -7,7 +7,7 @@ import Image from 'next/image'
 
 export default function Member({ imgUrl, alt, name, role, tel }: Member) {
 	return (
-		<article className="flex flex-row w-fit gap-3 samen-border p-3">
+		<article className="flex flex-row w-fit gap-3 custom-border p-3">
 			<Image
         className='rounded-lg border-2'
         src={imgUrl}
@@ -16,10 +16,10 @@ export default function Member({ imgUrl, alt, name, role, tel }: Member) {
         height={140}
       />
 			<div className='flex flex-col gap-1'>
-        <h5 className='samen-text text-xl'>{name}</h5>
-        <h6 className='samen-text text-base'>{role}</h6>
-        <Link className='flex flex-row samen-text border-2 border-samen-orange rounded-lg px-2 py-1 items-center' href={`tel:+98${convertToEng(tel.slice(1).replaceAll(' ', '').replaceAll('-', ''))}`}>
-          <span className='text-samen-orange'>{tel}</span>
+        <h5 className='custom-text text-xl'>{name}</h5>
+        <h6 className='custom-text text-base'>{role}</h6>
+        <Link className='flex flex-row custom-text border-2 border-custom-orange rounded-lg px-2 py-1 items-center' href={`tel:+98${convertToEng(tel.slice(1).replaceAll(' ', '').replaceAll('-', ''))}`}>
+          <span className='text-custom-orange'>{tel}</span>
           <FiPhone className='stroke-none fill-black' />
         </Link>
       </div>

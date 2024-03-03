@@ -5,7 +5,7 @@ export default function CustomInput({ disabled=false, customclasses, label, id, 
 	return (<div className='flex flex-row items-center gap-8'>
     {label && id ? <label htmlFor={id}>{label}</label> : null}
     <input
-      className={`text-center samen-border ${fullyRounded ? '!rounded-full' : ''} p-4 ${customclasses}`}
+      className={`text-center custom-border ${fullyRounded ? '!rounded-full' : ''} p-4 ${customclasses}`}
       placeholder={placeholder}
       disabled={disabled}
       min={min}
